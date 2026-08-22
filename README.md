@@ -14,7 +14,13 @@ The study compares **ResNet-50, ConvNeXt-Tiny, ViT-S/16, and Swin-Tiny** using t
 - **P4:** bidirectional ADT45 ↔ OTHER domain shift, class-matched.
 - **P5:** sensitivity analysis with exact disease + age matching.
 
-P5 is a sensitivity/control analysis and is **not** interpreted as a pure causal effect of cultivar.
+The dataset variable `age` is treated as the observed plant-age variable and used operationally to control age-related/phenology-related imbalance. It should not be interpreted as a botanically validated phenological-stage annotation unless independently mapped to such stages.
+
+P5 is a sensitivity/control analysis and is **not** interpreted as a pure causal effect of cultivar. In the implemented exact-matching design, P5 uses the **5 disease classes with sufficient shared support**, with **100 matched ADT45–OTHER pairs per class** and a **60/20/20 split by matched pairs**. Therefore, P5 results should not be read as a 10-class benchmark.
+
+### Protocol-development note
+
+Notebook `02_PaddyDoctor_Confounding_Leakage_Splits.ipynb` also generates the directional splits `P2_ADT45_to_OTHER` and `P3_OTHER_to_ADT45`. These are retained for transparency as intermediate protocol-development outputs. The main inferential sequence documented for the manuscript is **P1 → P4 → P5**.
 
 ## Repository structure
 
@@ -58,6 +64,8 @@ The original project path used in Colab is:
 /content/drive/MyDrive/PADDY_DOCTOR_Q1
 ```
 
+For archival reproducibility, lightweight derived metadata and the frozen split/pair assignment files may be released separately when redistribution is appropriate. Raw images, checkpoints, credentials, and other large/private artifacts should remain outside GitHub.
+
 ## Main reproducibility safeguards
 
 - Exact duplicate audit with SHA-256.
@@ -77,6 +85,12 @@ The manuscript reports a common training budget of 30 epochs, 224×224 input res
 ## Hardware/software reference
 
 Experiments were executed on an NVIDIA L4 (22 GB). The manuscript records PyTorch 2.11.0+cu128, torchvision 0.26.0+cu128, and timm 1.0.28. P1 and P4/P5 were executed in different Colab Python runtimes; see `docs/REPRODUCIBILITY.md`.
+
+Because Colab runtimes evolve, `requirements.txt` and `environment.yml` are convenience specifications rather than byte-for-byte reconstructions of every historical runtime. Exact environment snapshots should be archived before public release when available.
+
+## Automated repository audit
+
+A GitHub Actions workflow under `.github/workflows/repository-audit.yml` checks the expected notebook/script inventory, notebook JSON validity, Python syntax, misplaced notebooks, and accidentally tracked sensitive/large artifacts.
 
 ## Citation
 
