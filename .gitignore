@@ -7,6 +7,16 @@ checkpoints/
 *.pth
 *.ckpt
 
+# Credentials / private configuration
+config/
+**/config/
+.kaggle/
+**/.kaggle/
+kaggle.json
+**/kaggle.json
+.env
+.env.*
+
 # Runtime/cache
 __pycache__/
 .ipynb_checkpoints/
@@ -16,7 +26,6 @@ __pycache__/
 # Local environments
 .venv/
 venv/
-.env
 
 # OS/editor
 .DS_Store
@@ -27,3 +36,4 @@ Thumbs.db
 # Large transient outputs
 exports/
 wandb/
+*.zip
