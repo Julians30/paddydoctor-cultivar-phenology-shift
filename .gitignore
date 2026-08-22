@@ -1,0 +1,29 @@
+# Raw data / large artifacts
+data/raw/
+data/processed/
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Runtime/cache
+__pycache__/
+.ipynb_checkpoints/
+.cache/
+*.pyc
+
+# Local environments
+.venv/
+venv/
+.env
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large transient outputs
+exports/
+wandb/
