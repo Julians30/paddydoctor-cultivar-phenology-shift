@@ -1,4 +1,4 @@
-# Paddy Doctor — Cultivar Shift and Phenological Confounding
+# Paddy Doctor - Cultivar Shift and Phenological Confounding
 
 Reproducibility repository for the study:
 
