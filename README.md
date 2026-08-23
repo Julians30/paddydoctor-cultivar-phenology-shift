@@ -2,7 +2,7 @@
 
 Reproducibility repository for the study:
 
-**Cambio de cultivar y confusión fenológica en la clasificación de enfermedades del arroz: evaluación controlada de robustez y confiabilidad de CNN y Vision Transformers**
+**Cultivar Shift and Phenological Confounding in Rice Disease Classification: A Controlled Evaluation of Robustness and Reliability in CNNs and Vision Transformers**
 
 ## Scientific objective
 
