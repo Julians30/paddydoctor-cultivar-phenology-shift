@@ -2,7 +2,7 @@
 
 Reproducibility repository for the study:
 
-**Cultivar Shift and Phenological Confounding in Rice Disease Classification: A Controlled Evaluation of Robustness and Reliability in CNNs and Vision Transformers**
+**Reliability of deep vision models under cultivar-associated domain shift in rice disease classification: a phenology-controlled evaluation**
 
 ## Scientific objective
 
@@ -30,9 +30,11 @@ Notebook `02_PaddyDoctor_Confounding_Leakage_Splits.ipynb` also generates the di
 ├── scripts/            # Plain-Python exports of notebook code
 ├── data/README.md      # Dataset access and non-redistribution note
 ├── docs/
-│   └── REPRODUCIBILITY.md
+│   ├── REPRODUCIBILITY.md
+│   └── ARCHIVING.md
 ├── results/README.md   # Expected result folders/files
 ├── figures/README.md   # Figure generation note
+├── CITATION.cff
 ├── requirements.txt
 ├── environment.yml
 └── .gitignore
@@ -92,10 +94,12 @@ Because Colab runtimes evolve, `requirements.txt` and `environment.yml` are conv
 
 A GitHub Actions workflow under `.github/workflows/repository-audit.yml` checks the expected notebook/script inventory, notebook JSON validity, Python syntax, misplaced notebooks, and accidentally tracked sensitive/large artifacts.
 
-## Citation
+## Citation and archival release
 
-The manuscript is under preparation/revision. A DOI/archival citation should be added here after publication or repository archiving.
+A machine-readable citation file is provided in `CITATION.cff`. Before journal submission/public release, the authors should freeze a versioned release (recommended: `v1.0.0`), archive that release in a persistent repository such as Zenodo, and add the resulting DOI to this README and to the manuscript's Data/Code Availability statements. See `docs/ARCHIVING.md`.
+
+The GitHub repository should remain the actively maintained code repository; the archived DOI should identify the immutable version supporting the submitted manuscript.
 
 ## License
 
-No license has been assigned yet. Add the license selected by the authors before public release.
+No license has been assigned yet. **A code license must be selected by the authors before public release.** This should be resolved before making the repository public so that permitted reuse is explicit.
