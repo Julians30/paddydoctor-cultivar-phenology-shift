@@ -2,21 +2,21 @@
 
 Reproducibility repository for the study:
 
-**Reliability of deep vision models under cultivar-associated domain shift in rice disease classification: a phenology-controlled evaluation**
+**Reliability of deep vision models under cultivar-associated domain shift in rice plant-health classification: a phenology-controlled evaluation**
 
 ## Scientific objective
 
-This project evaluates whether high in-domain performance in rice disease classification remains reliable under cultivar/domain shift and whether the degradation persists after exact matching on the observed plant-age variable.
+This project evaluates whether high in-domain performance in rice plant-health classification remains reliable under cultivar/domain shift and whether the degradation persists after exact matching on the observed plant-age variable.
 
 The study compares **ResNet-50, ConvNeXt-Tiny, ViT-S/16, and Swin-Tiny** using three pre-specified seeds (**2026, 2027, 2028**) and the staged experimental design **P1 → P4 → P5**.
 
 - **P1:** leakage-audited IID reference.
 - **P4:** bidirectional ADT45 ↔ OTHER domain shift, class-matched.
-- **P5:** sensitivity analysis with exact disease + age matching.
+- **P5:** sensitivity analysis with exact benchmark-class + age matching.
 
 The dataset variable `age` is treated as the observed plant-age variable and used operationally to control age-related/phenology-related imbalance. It should not be interpreted as a botanically validated phenological-stage annotation unless independently mapped to such stages.
 
-P5 is a sensitivity/control analysis and is **not** interpreted as a pure causal effect of cultivar. In the implemented exact-matching design, P5 uses the **5 disease classes with sufficient shared support**, with **100 matched ADT45–OTHER pairs per class** and a **60/20/20 split by matched pairs**. Therefore, P5 results should not be read as a 10-class benchmark.
+P5 is a sensitivity/control analysis and is **not** interpreted as a pure causal effect of cultivar. In the implemented exact-matching design, P5 uses the **5 benchmark classes with sufficient shared support** (blast, dead_heart, downy_mildew, hispa, and normal), with **100 matched ADT45–OTHER pairs per class** and a **60/20/20 split by matched pairs**. These benchmark classes include disease, pest-damage, and normal categories; therefore, P5 results should not be read as a 10-class disease-only benchmark.
 
 ### Protocol-development note
 
