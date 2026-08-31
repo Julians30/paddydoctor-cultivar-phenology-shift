@@ -2,7 +2,7 @@
 
 This checklist is intended for the manuscript:
 
-**Reliability of deep vision models under cultivar-associated domain shift in rice disease classification: a phenology-controlled evaluation**
+**Reliability of deep vision models under cultivar-associated domain shift in rice plant-health classification: a phenology-controlled evaluation**
 
 ## Before making the repository public
 
@@ -14,9 +14,13 @@ This checklist is intended for the manuscript:
 - [ ] Confirm that raw Paddy Doctor images are not redistributed.
 - [ ] Confirm that the public supplementary/machine-readable files correspond to the frozen manuscript results.
 
+## Review-time access
+
+If the manuscript is handled under an anonymized review workflow, provide reviewers with a read-only anonymized mirror rather than the identifiable GitHub URL. The mirror must redact author names, usernames, ORCID identifiers, institutional names, email addresses, and other identity-bearing metadata while preserving notebooks, scripts, documentation, and frozen result artifacts required for technical review.
+
 ## Freeze the submission version
 
-1. Make the repository public only after the manuscript/repository audit is complete.
+1. Make the repository public only after the manuscript/repository audit is complete and the review-access strategy is confirmed.
 2. Create a GitHub release/tag named `v1.0.0` (recommended label: `Precision Agriculture submission`).
 3. Do not change the scientific outputs associated with that tagged version after release.
 4. Archive the GitHub release in a persistent repository such as Zenodo.
