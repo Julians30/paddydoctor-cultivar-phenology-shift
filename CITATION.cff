@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use these reproducibility materials, please cite the archived release and the associated article when available."
-title: "Reproducibility materials for: Reliability of deep vision models under cultivar-associated domain shift in rice disease classification: a phenology-controlled evaluation"
+title: "Reproducibility materials for: Reliability of deep vision models under cultivar-associated domain shift in rice plant-health classification: a phenology-controlled evaluation"
 type: software
 authors:
   - family-names: Coronel-Reyes
@@ -17,9 +17,9 @@ authors:
     orcid: "https://orcid.org/0009-0008-2151-4867"
 repository-code: "https://github.com/Julians30/paddydoctor-cultivar-phenology-shift"
 keywords:
-  - rice disease classification
+  - rice plant-health classification
   - domain shift
-  - cultivar shift
+  - cultivar-associated shift
   - calibration
   - selective prediction
   - deep learning
