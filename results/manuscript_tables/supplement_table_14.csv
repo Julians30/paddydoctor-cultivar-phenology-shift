@@ -1,0 +1,8 @@
+Component,P1,P4/P5,Reporting note
+Hardware,"NVIDIA L4, 22.0 GB","NVIDIA L4, 22.0 GB",Common accelerator family
+Python,3.12.13,3.13.15,Separate evolving Google Colab runtimes
+PyTorch,2.11.0+cu128,2.11.0+cu128,Recorded project version string
+torchvision,0.26.0+cu128,0.26.0+cu128,Recorded project version string
+timm,1.0.28,1.0.28,Recorded project version string
+Training seeds,"2026, 2027, 2028","2026, 2027, 2028",Prespecified before final comparison
+Additional analysis,CPU postprocessing,Python 3.13.18; NumPy 2.4.6; pandas 2.2.3,"Recorded user Colab execution of notebook 14, 20 November 2026; no network retraining"

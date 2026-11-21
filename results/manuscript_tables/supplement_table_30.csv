@@ -1,0 +1,5 @@
+Architecture,Requested timm name,Inferred default tag,Registry lineage,Loaded checksum
+ResNet-50,resnet50,a1_in1k,ImageNet-1k,Not retained
+ConvNeXt-Tiny,convnext_tiny,in12k_ft_in1k,ImageNet-12k then ImageNet-1k,Not retained
+ViT-S/16,vit_small_patch16_224,augreg_in21k_ft_in1k,ImageNet-21k then ImageNet-1k,Not retained
+Swin-Tiny,swin_tiny_patch4_window7_224,ms_in1k,ImageNet-1k,Not retained

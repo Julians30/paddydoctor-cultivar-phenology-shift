@@ -1,0 +1,16 @@
+protocol,split,n_images,n_classes,n_varieties,n_visual_groups,min_age,max_age
+P1_group_clean,test,1476,10,10,1476,45,82
+P1_group_clean,train,7377,10,10,7377,45,82
+P1_group_clean,validation,1476,10,10,1476,45,82
+P4A_ADT45_to_OTHER_matched,test,616,10,9,616,45,80
+P4A_ADT45_to_OTHER_matched,train,1848,10,1,1848,45,80
+P4A_ADT45_to_OTHER_matched,validation,616,10,1,616,45,80
+P4B_ADT45_to_ADT45_control,test,616,10,1,616,45,80
+P4B_ADT45_to_ADT45_control,train,1848,10,1,1848,45,80
+P4B_ADT45_to_ADT45_control,validation,616,10,1,616,45,80
+P4C_OTHER_to_ADT45_matched,test,616,10,1,616,45,80
+P4C_OTHER_to_ADT45_matched,train,1848,10,9,1848,45,80
+P4C_OTHER_to_ADT45_matched,validation,616,10,9,616,45,80
+P4D_OTHER_to_OTHER_control,test,616,10,9,616,45,80
+P4D_OTHER_to_OTHER_control,train,1848,10,9,1848,45,80
+P4D_OTHER_to_OTHER_control,validation,616,10,9,616,45,80

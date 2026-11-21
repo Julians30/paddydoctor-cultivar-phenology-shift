@@ -1,0 +1,9 @@
+Target,Configuration,Matching % SS,Seed main % SS,Matching by seed % SS,Seed plus interaction % SS
+ADT45,ResNet-50,62.11,0.16,37.72,37.89
+ADT45,ConvNeXt-Tiny,22.01,4.92,73.07,77.99
+ADT45,ViT-S/16,53.03,5.13,41.84,46.97
+ADT45,Swin-Tiny,13.64,0.62,85.74,86.36
+OTHER,ResNet-50,59.35,5.56,35.09,40.65
+OTHER,ConvNeXt-Tiny,50.03,5.61,44.37,49.97
+OTHER,ViT-S/16,32.35,1.09,66.56,67.65
+OTHER,Swin-Tiny,34.30,19.42,46.27,65.70

@@ -1,0 +1,11 @@
+{
+  "code_cells_compile": true,
+  "embedded_module_identical": true,
+  "reproduction_csv_exact": [
+    "17_seed_and_matching_summary.csv",
+    "17_factorial_SS_by_target.csv",
+    "17_within_configuration_SS.csv",
+    "17_verified_input_scores.csv",
+    "17_algebra_verification.csv"
+  ]
+}

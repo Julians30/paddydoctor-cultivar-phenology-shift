@@ -1,0 +1,24 @@
+section,finding,value
+equivalence,pairwise_comparisons_total,54
+equivalence,practically_equivalent_comparisons,3
+selective_prediction,lowest_AURC__P1__P1_IID,Swin-Tiny | AURC=0.001714
+selective_prediction,lowest_AURC__P4__P4A_ADT45_to_OTHER,ConvNeXt-Tiny | AURC=0.182588
+selective_prediction,lowest_AURC__P4__P4B_ADT45_to_ADT45,ViT-S/16 | AURC=0.007593
+selective_prediction,lowest_AURC__P4__P4C_OTHER_to_ADT45,ConvNeXt-Tiny | AURC=0.337961
+selective_prediction,lowest_AURC__P4__P4D_OTHER_to_OTHER,ConvNeXt-Tiny | AURC=0.002247
+selective_prediction,lowest_AURC__P5__P5A_ADT45_to_OTHER_age_matched,ConvNeXt-Tiny | AURC=0.111705
+selective_prediction,lowest_AURC__P5__P5B_ADT45_to_ADT45_age_control,ViT-S/16 | AURC=0.010210
+selective_prediction,lowest_AURC__P5__P5C_OTHER_to_ADT45_age_matched,ViT-S/16 | AURC=0.249613
+selective_prediction,lowest_AURC__P5__P5D_OTHER_to_OTHER_age_control,ConvNeXt-Tiny | AURC=0.001676
+prediction_sets,mean_coverage__P1__raw__alpha_0.05,0.957373532068654
+prediction_sets,mean_coverage__P1__raw__alpha_0.1,0.9070121951219512
+prediction_sets,mean_coverage__P1__temperature_scaled__alpha_0.05,0.9578252032520325
+prediction_sets,mean_coverage__P1__temperature_scaled__alpha_0.1,0.9078026196928636
+prediction_sets,mean_coverage__P4__raw__alpha_0.05,0.7455357142857143
+prediction_sets,mean_coverage__P4__raw__alpha_0.1,0.6481669372294372
+prediction_sets,mean_coverage__P4__temperature_scaled__alpha_0.05,0.743641774891775
+prediction_sets,mean_coverage__P4__temperature_scaled__alpha_0.1,0.6444128787878789
+prediction_sets,mean_coverage__P5__raw__alpha_0.05,0.8383333333333333
+prediction_sets,mean_coverage__P5__raw__alpha_0.1,0.7212500000000001
+prediction_sets,mean_coverage__P5__temperature_scaled__alpha_0.05,0.8372916666666667
+prediction_sets,mean_coverage__P5__temperature_scaled__alpha_0.1,0.7191666666666666

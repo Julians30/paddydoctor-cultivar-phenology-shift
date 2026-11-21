@@ -1,26 +1,28 @@
 cff-version: 1.2.0
-message: "If you use these reproducibility materials, please cite the archived release and the associated article when available."
-title: "Reproducibility materials for: Reliability of deep vision models under cultivar-associated domain shift in rice plant-health classification: a phenology-controlled evaluation"
+message: "If you use these materials, please cite this repository and the associated article when available."
 type: software
+title: "Paddy Doctor model reliability under cultivar-associated domain shift with exact age matching"
 authors:
   - family-names: Coronel-Reyes
     given-names: Julián
+    email: jcoronel1@utmachala.edu.ec
+    affiliation: Universidad Técnica de Machala
     orcid: "https://orcid.org/0000-0002-7883-5388"
-  - family-names: Haro-Sarango
-    given-names: Alexander
-    orcid: "https://orcid.org/0000-0001-7398-2760"
-  - family-names: Delgado-Vera
-    given-names: Carlota
-    orcid: "https://orcid.org/0000-0002-8527-6078"
-  - family-names: Triviño-Sánchez
-    given-names: Johnny
-    orcid: "https://orcid.org/0009-0008-2151-4867"
+  - family-names: Barahona-Montalván
+    given-names: Bryan Iván
+    affiliation: Universidad Agraria del Ecuador
+    orcid: "https://orcid.org/0009-0006-2223-4387"
+  - family-names: Vélez-San Martín
+    given-names: Bryan Orlando
+    affiliation: Universidad Agraria del Ecuador
+    orcid: "https://orcid.org/0009-0003-0678-7828"
 repository-code: "https://github.com/Julians30/paddydoctor-cultivar-phenology-shift"
+url: "https://github.com/Julians30/paddydoctor-cultivar-phenology-shift"
+license: MIT
 keywords:
   - rice plant-health classification
   - domain shift
-  - cultivar-associated shift
+  - age matching
   - calibration
   - selective prediction
-  - deep learning
   - reproducibility

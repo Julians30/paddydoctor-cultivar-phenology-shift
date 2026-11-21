@@ -1,0 +1,16 @@
+{
+  "result_hashes_verified": 2400,
+  "fixed_target_losses_reconstructed": 120,
+  "max_score_difference": 1.6653345369377348e-16,
+  "input_zip_sha256": "da3a90a13ca42bf931f3bb702be88bacbde48ff5a9ee2a06a5aa3fcbef9f5c8e",
+  "input_zip_size": 11518384,
+  "checkpoint_bytes_verified": false,
+  "balanced_three_factor_tables": 6,
+  "balanced_two_factor_tables": 24,
+  "max_reconstruction_error": 1.1102230246251565e-16,
+  "max_helmert_ss_error": 2.7755575615628914e-16,
+  "no_F_statistics": true,
+  "no_p_values": true,
+  "no_random_effect_variance_estimates": true,
+  "synthetic_factor_tests_passed": true
+}

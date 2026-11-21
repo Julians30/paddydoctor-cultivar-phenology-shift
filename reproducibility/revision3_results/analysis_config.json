@@ -1,0 +1,10 @@
+{
+  "bootstrap_replicates": 2000,
+  "seed_bootstrap": "resample 3 paired seed indices with replacement using shared class-stratified image samples; exploratory with only 3 seeds",
+  "ece_intervals": "percentile, paired raw-minus-TS, conditional on fixed fitted models and temperatures; adaptive boundaries recomputed in each replicate",
+  "aurc": "mean cumulative error at retained counts 1..N; confidence descending, image_id ascending tie break; E-AURC subtracts finite-sample optimal ordering at same error count",
+  "metadata_baseline": "cultivar-majority rule fitted only to training rows, lexicographic ties and training-majority fallback; full-pool score separately labeled resubstitution",
+  "new_network_training": false,
+  "ensemble": "mean raw class probabilities of 3 seeds within same architecture; one scalar T fitted on source-validation ensemble probabilities using bounded log-temperature minimization [.05,20], xatol 1e-8 maxiter 500; no target labels for fitting",
+  "strict_rules": "source-only empirical risk limits .01,.02,.05, minimum 20 accepted validation images and 20% coverage; no eligible threshold means reject all"
+}

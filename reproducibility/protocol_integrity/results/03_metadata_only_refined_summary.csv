@@ -1,0 +1,6 @@
+model,accuracy_mean,accuracy_std,balanced_accuracy_mean,balanced_accuracy_std,macro_f1_mean,macro_f1_std
+age_categorical,0.272,0.0046,0.3159,0.0053,0.2251,0.0042
+age_numeric,0.1131,0.0043,0.1439,0.0075,0.061,0.0031
+variety_only,0.2375,0.0067,0.2461,0.0067,0.1801,0.0083
+variety_plus_age_categorical,0.3515,0.0102,0.4166,0.0052,0.3383,0.0103
+variety_plus_age_numeric,0.2267,0.0091,0.2944,0.0074,0.2391,0.0089

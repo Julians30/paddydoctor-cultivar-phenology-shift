@@ -1,0 +1,5 @@
+Protocol,Domain,Cultivars,Train,Validation,Test,Age days
+P6,ADT45,1,144,48,48,45–80
+P6,OTHER_balanced,4,144,48,48,45–80
+P7,AndraPonni,1,90,30,30,45–65
+P7,REST,3,90,30,30,45–65

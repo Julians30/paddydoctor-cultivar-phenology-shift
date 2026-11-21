@@ -1,0 +1,11 @@
+label,ADT45_candidates,OTHER_candidates,exact_age_pairs,selected_pairs
+bacterial_leaf_blight,397,73,32,0
+bacterial_leaf_streak,107,272,0,0
+bacterial_panicle_blight,259,77,3,0
+blast,785,942,289,100
+brown_spot,823,129,47,0
+dead_heart,970,459,358,100
+downy_mildew,329,289,101,100
+hispa,831,758,318,100
+normal,1442,307,267,100
+tungro,984,96,66,0

@@ -1,0 +1,5 @@
+model,registry_tag,registry_lineage,source_file,line,url,loaded_weight_checksum,interpretation
+resnet50,a1_in1k,ImageNet-1k,resnet.py,906,https://github.com/huggingface/pytorch-image-models/blob/v1.0.28/timm/models/resnet.py#L906,Not retained,Static default of unmodified v1.0.28 registry; not a historical execution record
+convnext_tiny,in12k_ft_in1k,ImageNet-12k then ImageNet-1k,convnext.py,738,https://github.com/huggingface/pytorch-image-models/blob/v1.0.28/timm/models/convnext.py#L738,Not retained,Static default of unmodified v1.0.28 registry; not a historical execution record
+vit_small_patch16_224,augreg_in21k_ft_in1k,ImageNet-21k then ImageNet-1k,vision_transformer.py,1841,https://github.com/huggingface/pytorch-image-models/blob/v1.0.28/timm/models/vision_transformer.py#L1841,Not retained,Static default of unmodified v1.0.28 registry; not a historical execution record
+swin_tiny_patch4_window7_224,ms_in1k,ImageNet-1k,swin_transformer.py,1113,https://github.com/huggingface/pytorch-image-models/blob/v1.0.28/timm/models/swin_transformer.py#L1113,Not retained,Static default of unmodified v1.0.28 registry; not a historical execution record

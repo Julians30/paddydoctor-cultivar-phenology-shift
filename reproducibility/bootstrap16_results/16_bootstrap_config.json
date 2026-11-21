@@ -1,0 +1,45 @@
+{
+  "replicates": 5000,
+  "random_seed": 20261121,
+  "interval_method": "percentile 2.5% and 97.5%; not BCa",
+  "estimand": "control minus transfer score on identical target images; average of three seed-specific scores",
+  "image_bootstrap": "100 test images sampled within true class (20 per class), with replacement; same indices for control, transfer, all architectures and seeds within a matching/target",
+  "seed_image_sensitivity": "same class-stratified image draws plus resampling three paired seed indices with replacement; shared indices across architectures",
+  "rematching_handling": "five matching constructions analyzed separately; descriptive mean/SD/range only across constructions; no resampling of overlapping constructions as independent datasets",
+  "limits": [
+    "conditional on fitted networks, selected checkpoints and frozen matching assignments",
+    "three seeds yield a limited exploratory seed-distribution sensitivity, not precise seed-population coverage",
+    "no simultaneous coverage or multiplicity correction; nonpositive bootstrap fractions are not frequentist p-values",
+    "no refitting, farm/session/plant cluster bootstrap or external-domain uncertainty",
+    "no BCa correction; class F1/recall intervals have only 20 unique class images and are exploratory",
+    "tests had been inspected before this retrospective analysis"
+  ],
+  "models": [
+    "convnext_tiny",
+    "resnet50",
+    "swin_tiny_patch4_window7_224",
+    "vit_small_patch16_224"
+  ],
+  "classes": [
+    "blast",
+    "dead_heart",
+    "downy_mildew",
+    "hispa",
+    "normal"
+  ],
+  "match_seeds": [
+    31001,
+    31002,
+    31003,
+    31004,
+    31005
+  ],
+  "train_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3"
+}

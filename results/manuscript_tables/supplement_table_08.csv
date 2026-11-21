@@ -1,0 +1,17 @@
+Protocol,Target,Architecture,Adjusted p range,Seeds below 0.05
+P4,ADT45,ResNet-50,6.28e-84–8.23e-72,3/3
+P4,ADT45,ConvNeXt-Tiny,3.55e-70–4.14e-64,3/3
+P4,ADT45,ViT-S/16,7.96e-84–8.57e-76,3/3
+P4,ADT45,Swin-Tiny,1.56e-71–2.04e-54,3/3
+P4,OTHER,ResNet-50,1.54e-100–1.20e-89,3/3
+P4,OTHER,ConvNeXt-Tiny,3.16e-64–9.74e-57,3/3
+P4,OTHER,ViT-S/16,1.34e-78–1.80e-66,3/3
+P4,OTHER,Swin-Tiny,7.87e-68–1.04e-61,3/3
+P5,ADT45,ResNet-50,2.72e-11–2.14e-06,3/3
+P5,ADT45,ConvNeXt-Tiny,4.62e-09–5.04e-07,3/3
+P5,ADT45,ViT-S/16,1.24e-09–1.70e-08,3/3
+P5,ADT45,Swin-Tiny,1.19e-08–2.14e-06,3/3
+P5,OTHER,ResNet-50,5.33e-15–3.48e-12,3/3
+P5,OTHER,ConvNeXt-Tiny,6.15e-08–3.10e-06,3/3
+P5,OTHER,ViT-S/16,9.31e-10–1.05e-08,3/3
+P5,OTHER,Swin-Tiny,3.44e-10–5.65e-06,3/3

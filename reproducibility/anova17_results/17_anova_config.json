@@ -1,0 +1,38 @@
+{
+  "design": "separate target domains; 4 model configurations \u00d7 5 matching constructions \u00d7 3 training seeds",
+  "responses": [
+    "control_f1",
+    "transfer_f1",
+    "loss"
+  ],
+  "definition": "orthogonal sum-of-squares decomposition of a complete balanced table; percentage is SS_term / SS_total \u00d7 100",
+  "interactions": "all main effects, all two-way interactions and the three-way interaction retained",
+  "degrees_of_freedom": "59 total; 3,4,2,12,6,8,24 for configuration, matching, seed and their interactions",
+  "replication": "one score per factor combination; saturated decomposition has zero residual df; highest interaction is not an independently estimated random error",
+  "scope": "descriptive contributions to observed finite-table variation, not causal effects or population variance components",
+  "dependencies": "overlapping matching image sets and common target images across configurations; no independence-based F inference",
+  "seed_scope": "seed main effect can cancel across configurations or matchings; seed-related interactions are reported",
+  "pretraining": "configurations have different pretrained lineages, so configuration contribution is not architecture-only",
+  "bootstrap_relation": "bootstrap 16 estimates paired image-conditional uncertainty separately for each matching; ANOVA does not replace it",
+  "models": [
+    "resnet50",
+    "convnext_tiny",
+    "vit_small_patch16_224",
+    "swin_tiny_patch4_window7_224"
+  ],
+  "match_seeds": [
+    31001,
+    31002,
+    31003,
+    31004,
+    31005
+  ],
+  "train_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3"
+}

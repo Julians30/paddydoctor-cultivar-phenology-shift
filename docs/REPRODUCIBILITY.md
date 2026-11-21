@@ -1,49 +1,41 @@
-# Reproducibility guide
+# Reproducing the study
 
-## Recommended execution order
+## Frozen output analysis
 
-1. `00_PaddyDoctor_Download_Initial_Audit.ipynb`
-2. `01_PaddyDoctor_Scientific_Audit.ipynb`
-3. `02_PaddyDoctor_Confounding_Leakage_Splits.ipynb`
-4. `03_PaddyDoctor_NearDuplicates_MatchedProtocols.ipynb`
-5. `04_PaddyDoctor_PhenologyMatched_Protocols.ipynb`
-6. `05_v3_1_PaddyDoctor_P1_CNN_Transformer_Benchmark_30epochs_noEarlyStop_FIXED.ipynb`
-7. `06_PaddyDoctor_P4_CrossCultivar_30epochs_noEarlyStop.ipynb`
-8. `07_v1_1_PaddyDoctor_P5_ExactAgeMatched_30epochs_noEarlyStop_FIXED.ipynb`
-9. `08_PaddyDoctor_Joint_Statistical_Inference_P1_P4_P5.ipynb`
-10. `09_v1_1_PaddyDoctor_Calibration_Reliability_TemperatureScaling_FIXED.ipynb`
-11. `10_PaddyDoctor_Explainability_Faithfulness.ipynb`
-12. `11_PaddyDoctor_Computational_Efficiency_Benchmark.ipynb`
-13. `12_PaddyDoctor_Final_Article_Tables_Figures.ipynb`
+Install `requirements-analysis.txt` in a separate CPU environment. From `reproducibility/`:
 
-## Runtime
+```bash
+python restore_large_files.py
+python verify19.py --results 19_PaddyDoctor_RESULTADOS.zip --code notebook19_code --out reproduced19
+python paddy14_analysis.py --project . --output reproduced14 --portable --bootstrap 2000
+python analysis_revision2.py --project . --output reproduced_class_results
+python analysis_revision3.py --project . --output reproduced_reliability --bootstrap 2000
+```
 
-The notebooks are designed for Google Colab and mount Google Drive. The project root is:
+The P6/P7 numerical audit uses saved histories, logits, temperatures, assignments, features and logistic coefficients. It reconstructs 96 evaluations, 16 paired F1 intervals and two domain AUC intervals without loading rice-model tensors or rerunning training. The exact sources in `notebook19_code/` retain their executed byte hashes. Numbered Python notebook exports include Colab/IPython setup and are distinct from these portable numerical entrypoints.
 
-`/content/drive/MyDrive/PADDY_DOCTOR_Q1`
+Notebooks 16–18 cover repeated-P5 bootstrap, descriptive ANOVA, alternative calibration, class BCa intervals, prediction sets, a target-label calibration reference and crossed logistic models. Configuration files record fitting rules and random seeds. The omitted all-image notebook-18 calibrated-probability table can be reconstructed from supplied source-validation caches, target predictions, assignments and fitted calibrators.
 
-The manuscript records:
-- NVIDIA L4, 22 GB VRAM
-- PyTorch 2.11.0+cu128
-- torchvision 0.26.0+cu128
-- timm 1.0.28
-- Python 3.12.13 for P1
-- Python 3.13.15 for P4/P5
+## Image level training
 
-Because Colab images evolve, exact future reproduction may require an archived environment or container. The repository therefore records both package requirements and the versions reported in the manuscript.
+Use original Kaggle images and a GPU with notebooks 05–07, 15 and 19. The original Drive project location is `/content/drive/MyDrive/PADDY_DOCTOR_Q1`. Notebook 19.2 verifies image bytes and frozen P6/P7 assignments and asks for confirmation before Kaggle authentication when images must be restored. Credentials stay in the runtime.
 
-## Randomness
+Every fit has 30 epochs, 224 × 224 inputs, batch size 32, AdamW, learning rate 3e-4, weight decay 0.05, two warm-up epochs, cosine annealing and source-validation macro-F1 checkpoint selection. A shared horizon does not equalize compute or establish each architecture's optimum. P1 and P4/P5 crop aspect ratios differ; cross-protocol contrasts are not isolated shift effects.
 
-The pre-specified seeds are 2026, 2027, and 2028. Do not replace these with post-hoc seeds when reproducing the published comparisons.
+## Environments and pretraining
 
-## Data leakage
+| Block | Recorded environment |
+| --- | --- |
+| Reference P1/P4/P5 | L4, torch 2.11.0+cu128, torchvision 0.26.0+cu128, timm 1.0.28; different P1 and P4/P5 Python runtimes |
+| Repeated P5 and P6/P7 | L4, Python 3.13.16, torch 2.14.1+cu130, torchvision 0.29.1+cu130, timm 1.0.28 |
+| CPU checks | Separate configuration and verification records |
 
-Do not use the official competition test split as the main scientific test set if the integrity audit detects exact/perceptual overlap with the labeled training data.
+`requirements.txt` and `environment.yml` are convenience specifications for the reference software line, not reconstructions of every runtime. GPU builds require the appropriate package indexes and hardware; dependencies are not bundled.
 
-## Interpretation of protocols
+Reference registry-inferred tags are `resnet50.a1_in1k`, `convnext_tiny.in12k_ft_in1k`, `vit_small_patch16_224.augreg_in21k_ft_in1k` and `swin_tiny_patch4_window7_224.ms_in1k`. These pretraining lineages differ. Defaults do not certify missing original loaded-weight bytes. The 168 repeated-matching and cultivar-sensitivity fits retain explicit tags and initialization/source hashes. The 60 reference trained checkpoints are inventoried and audited, with payloads excluded.
 
-P1, P4, and P5 answer different questions. P5 reduces observed age imbalance but does not identify a pure causal cultivar effect because OTHER pools multiple cultivars and unobserved acquisition factors may remain.
+## Interpretation
 
-## Outputs
+Scores are computed per seed before averaging. Image intervals condition on fitted networks; seed-and-image intervals are exploratory with three seeds. Constructions overlap. Descriptive ANOVA percentages are not causal contributions or population variance estimates. P6/P7 have three classes and small target tests; their loss magnitudes cannot be read as improvements over five-class P5. Recorded age does not establish phenological stage, and no field-validity claim follows from computational checks.
 
-Each notebook writes permanent outputs to Google Drive. Generated models, caches, raw images, and large binary artifacts should remain outside GitHub. Small CSV tables, split indices, and final figures can be archived separately once the authors decide which supplementary artifacts will be public.
+The three largest scientific files are distributed as binary parts to keep individual transfers manageable. `restore_large_files.py` reconstructs their exact original bytes and checks both part and full-file SHA-256 values before analysis.

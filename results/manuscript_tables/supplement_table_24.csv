@@ -1,0 +1,41 @@
+Target,Architecture,Class,Control F1,Transfer F1,Control recall,Transfer recall,N
+ADT45,ConvNeXt-Tiny,blast,0.909,0.678,0.833,0.750,20
+ADT45,ConvNeXt-Tiny,dead heart,1.000,0.902,1.000,0.850,20
+ADT45,ConvNeXt-Tiny,downy mildew,0.871,0.245,0.900,0.200,20
+ADT45,ConvNeXt-Tiny,hispa,0.931,0.360,0.917,0.433,20
+ADT45,ConvNeXt-Tiny,normal,0.922,0.561,0.983,0.567,20
+ADT45,ResNet-50,blast,0.841,0.482,0.883,0.500,20
+ADT45,ResNet-50,dead heart,0.910,0.721,0.850,0.600,20
+ADT45,ResNet-50,downy mildew,0.779,0.292,0.683,0.250,20
+ADT45,ResNet-50,hispa,0.771,0.327,0.800,0.417,20
+ADT45,ResNet-50,normal,0.841,0.441,0.917,0.450,20
+ADT45,Swin-Tiny,blast,0.929,0.646,0.883,0.633,20
+ADT45,Swin-Tiny,dead heart,1.000,0.845,1.000,0.833,20
+ADT45,Swin-Tiny,downy mildew,0.869,0.306,0.833,0.217,20
+ADT45,Swin-Tiny,hispa,0.885,0.487,0.900,0.683,20
+ADT45,Swin-Tiny,normal,0.931,0.539,1.000,0.533,20
+ADT45,ViT-S/16,blast,0.937,0.637,0.883,0.650,20
+ADT45,ViT-S/16,dead heart,1.000,0.823,1.000,0.883,20
+ADT45,ViT-S/16,downy mildew,0.902,0.393,0.917,0.283,20
+ADT45,ViT-S/16,hispa,0.914,0.440,0.883,0.533,20
+ADT45,ViT-S/16,normal,0.931,0.428,1.000,0.417,20
+OTHER,ConvNeXt-Tiny,blast,0.952,0.595,0.983,0.533,20
+OTHER,ConvNeXt-Tiny,dead heart,0.992,0.950,1.000,0.950,20
+OTHER,ConvNeXt-Tiny,downy mildew,0.966,0.562,0.950,0.600,20
+OTHER,ConvNeXt-Tiny,hispa,0.938,0.692,0.900,0.717,20
+OTHER,ConvNeXt-Tiny,normal,0.984,0.740,1.000,0.750,20
+OTHER,ResNet-50,blast,0.843,0.432,0.850,0.433,20
+OTHER,ResNet-50,dead heart,0.974,0.570,0.950,0.400,20
+OTHER,ResNet-50,downy mildew,0.883,0.378,0.883,0.300,20
+OTHER,ResNet-50,hispa,0.910,0.327,0.917,0.417,20
+OTHER,ResNet-50,normal,0.992,0.523,1.000,0.633,20
+OTHER,Swin-Tiny,blast,0.959,0.510,0.967,0.483,20
+OTHER,Swin-Tiny,dead heart,1.000,0.957,1.000,0.933,20
+OTHER,Swin-Tiny,downy mildew,0.974,0.590,0.950,0.633,20
+OTHER,Swin-Tiny,hispa,0.967,0.593,0.983,0.617,20
+OTHER,Swin-Tiny,normal,0.983,0.634,0.983,0.617,20
+OTHER,ViT-S/16,blast,0.938,0.450,1.000,0.367,20
+OTHER,ViT-S/16,dead heart,1.000,0.900,1.000,0.900,20
+OTHER,ViT-S/16,downy mildew,0.965,0.549,0.933,0.650,20
+OTHER,ViT-S/16,hispa,0.956,0.547,0.917,0.567,20
+OTHER,ViT-S/16,normal,0.992,0.644,1.000,0.633,20

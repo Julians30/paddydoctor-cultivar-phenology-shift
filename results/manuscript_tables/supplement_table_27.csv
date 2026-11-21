@@ -1,0 +1,16 @@
+Class,Partition,ADT45 N,OTHER N,OTHER cultivar counts
+blast,train,60,60,AP 9; AtP 3; IR20 4; KP 7; ON 3; PN 12; SU 2; ZO 20
+blast,validation,20,20,AP 2; AtP 2; IR20 4; KP 3; ON 1; PN 1; ZO 7
+blast,test,20,20,AP 4; AtP 2; IR20 3; KP 2; ON 2; PN 4; ZO 3
+dead heart,train,60,60,AP 8; IR20 12; KP 22; ON 6; PN 10; RR 2
+dead heart,validation,20,20,IR20 2; KP 9; ON 2; PN 7
+dead heart,test,20,20,AP 5; IR20 3; KP 5; ON 2; PN 3; RR 1; ZO 1
+downy mildew,train,60,60,KP 26; ON 24; PN 3; ZO 7
+downy mildew,validation,20,20,KP 5; ON 11; PN 1; ZO 3
+downy mildew,test,20,20,KP 9; ON 5; PN 2; ZO 4
+hispa,train,60,60,AP 2; AtP 18; KP 6; ON 18; PN 7; ZO 9
+hispa,validation,20,20,AtP 5; KP 3; ON 6; ZO 6
+hispa,test,20,20,AtP 2; KP 4; ON 6; PN 2; ZO 6
+normal,train,60,60,ON 2; PN 55; RR 3
+normal,validation,20,20,ON 1; PN 18; RR 1
+normal,test,20,20,ON 1; PN 19

@@ -1,105 +1,68 @@
-# Paddy Doctor - Cultivar Shift and Phenological Confounding
+# Paddy Doctor model reliability under cultivar associated domain shift
 
-Reproducibility repository for the study:
+Reproducibility materials for **Reliability of deep vision models under cultivar-associated domain shift in rice plant-health classification with exact age matching**.
 
-**Reliability of deep vision models under cultivar-associated domain shift in rice plant-health classification: a phenology-controlled evaluation**
+**Authors:** Julián Coronel-Reyes, Bryan Iván Barahona-Montalván and Bryan Orlando Vélez-San Martín. Correspondence: jcoronel1@utmachala.edu.ec. Identifiers and affiliations: [CITATION.cff](CITATION.cff). Roles: [docs/CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md).
 
-## Scientific objective
+## Research question and designs
 
-This project evaluates whether high in-domain performance in rice plant-health classification remains reliable under cultivar/domain shift and whether the degradation persists after exact matching on the observed plant-age variable.
+Does predictive performance and confidence reliability deteriorate under cultivar-associated domain shift after exact matching on benchmark class and recorded age? How well do source-fitted calibration and confidence-based acceptance rules transfer?
 
-The study compares **ResNet-50, ConvNeXt-Tiny, ViT-S/16, and Swin-Tiny** using three pre-specified seeds (**2026, 2027, 2028**) and the staged experimental design **P1 → P4 → P5**.
+ResNet-50, ConvNeXt-Tiny, ViT-S/16 and Swin-Tiny use seeds 2026, 2027 and 2028. Controls and transferred models predict **identical target images**. There are **228 completed neural fits**, each with a 30-epoch horizon; calibration fits are counted separately.
 
-- **P1:** leakage-audited IID reference.
-- **P4:** bidirectional ADT45 ↔ OTHER domain shift, class-matched.
-- **P5:** sensitivity analysis with exact benchmark-class + age matching.
+| Design | Comparison | Neural fits |
+| --- | --- | ---: |
+| P1 | Leakage-audited IID reference, ten classes | 12 |
+| P4 | ADT45 versus OTHER, matched class composition, ten classes | 24 |
+| Reference P5 | Exact class-and-recorded-age pairs, five classes | 24 |
+| Repeated P5 | Five overlapping matching constructions, five classes | 120 |
+| P6 | Four OTHER cultivars balanced across three classes and paired with ADT45 | 24 |
+| P7 | AndraPonni versus REST excluding AndraPonni, three classes | 24 |
 
-The dataset variable `age` is treated as the observed plant-age variable and used operationally to control age-related/phenology-related imbalance. It should not be interpreted as a botanically validated phenological-stage annotation unless independently mapped to such stages.
+P2/P3 are intermediate software labels, not additional evaluated experiments. OTHER in P4/P5 pools nine cultivars. P6 and P7 retain blast, dead heart and hispa and differ in sample size from P5.
 
-P5 is a sensitivity/control analysis and is **not** interpreted as a pure causal effect of cultivar. In the implemented exact-matching design, P5 uses the **5 benchmark classes with sufficient shared support** (blast, dead_heart, downy_mildew, hispa, and normal), with **100 matched ADT45–OTHER pairs per class** and a **60/20/20 split by matched pairs**. These benchmark classes include disease, pest-damage, and normal categories; therefore, P5 results should not be read as a 10-class disease-only benchmark.
+## Findings and scope
 
-### Protocol-development note
+The 40 repeated-P5 mean losses were positive, with marginal image and seed-and-image intervals above zero. P6 retained losses of 0.1712–0.3723 after cultivar–class balancing; P7 retained losses of 0.2330–0.7255. All 16 paired image intervals were positive. Frozen-feature domain AUC was 0.9537 in P4 restricted to the same five classes as P5 and 0.9392 in P5. Source temperature scaling improved average probability scores without restoring same-domain reliability.
 
-Notebook `02_PaddyDoctor_Confounding_Leakage_Splits.ipynb` also generates the directional splits `P2_ADT45_to_OTHER` and `P3_OTHER_to_ADT45`. These are retained for transparency as intermediate protocol-development outputs. The main inferential sequence documented for the manuscript is **P1 → P4 → P5**.
+These are internal comparisons within one public collection. Recorded age is not validated phenological stage. Cultivar and unobserved acquisition conditions are not causally separated. Constructions overlap; three seeds and small P6/P7 tests do not establish independent farm or field generalization. The ANOVA is descriptive, without residual replication for a full-interaction F test. A shared epoch horizon does not equalize elapsed compute.
 
-## Repository structure
+## Contents
 
-```text
-.
-├── notebooks/          # Canonical Colab/Jupyter notebooks
-├── scripts/            # Plain-Python exports of notebook code
-├── data/README.md      # Dataset access and non-redistribution note
-├── docs/
-│   ├── REPRODUCIBILITY.md
-│   └── ARCHIVING.md
-├── results/README.md   # Expected result folders/files
-├── figures/README.md   # Figure generation note
-├── CITATION.cff
-├── requirements.txt
-├── environment.yml
-└── .gitignore
+| Location | Contents |
+| --- | --- |
+| [notebooks/](notebooks/) | Colab/Jupyter notebooks 00–19 |
+| [scripts/](scripts/) | Python exports and repository audit |
+| [reproducibility/](reproducibility/) | Frozen outputs, assignments, histories, numerical sources, environment records and checksum manifest |
+| [results/manuscript_tables/](results/manuscript_tables/) | Nine main and 51 supplementary CSV tables |
+| [figures/](figures/) | Cultivar-sensitivity and domain-separability figures, PNG/PDF |
+| [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) | Execution routes, environments and limitations |
+
+## Reproduce numerical results without training
+
+```bash
+python -m pip install -r requirements-analysis.txt
+cd reproducibility
+python restore_large_files.py
+python verify19.py --results 19_PaddyDoctor_RESULTADOS.zip --code notebook19_code --out reproduced19
 ```
 
-## Canonical notebooks
+This checks 48 completed fits, 96 evaluations, 960 result-file hashes, every 30-epoch history, 16 paired loss intervals and domain probabilities/AUC intervals. The feature cache is in the results archive. No original RGB images or GPU are required for this audit. Other numerical routes are documented in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
 
-1. `00_PaddyDoctor_Download_Initial_Audit.ipynb`
-2. `01_PaddyDoctor_Scientific_Audit.ipynb`
-3. `02_PaddyDoctor_Confounding_Leakage_Splits.ipynb`
-4. `03_PaddyDoctor_NearDuplicates_MatchedProtocols.ipynb`
-5. `04_PaddyDoctor_PhenologyMatched_Protocols.ipynb`
-6. `05_v3_1_PaddyDoctor_P1_CNN_Transformer_Benchmark_30epochs_noEarlyStop_FIXED.ipynb`
-7. `06_PaddyDoctor_P4_CrossCultivar_30epochs_noEarlyStop.ipynb`
-8. `07_v1_1_PaddyDoctor_P5_ExactAgeMatched_30epochs_noEarlyStop_FIXED.ipynb`
-9. `08_PaddyDoctor_Joint_Statistical_Inference_P1_P4_P5.ipynb`
-10. `09_v1_1_PaddyDoctor_Calibration_Reliability_TemperatureScaling_FIXED.ipynb`
-11. `10_PaddyDoctor_Explainability_Faithfulness.ipynb`
-12. `11_PaddyDoctor_Computational_Efficiency_Benchmark.ipynb`
-13. `12_PaddyDoctor_Final_Article_Tables_Figures.ipynb`
+The 35 MB notebook-18 all-image calibrated-probability table is omitted because it can be regenerated; fitted calibrators, predictions, assignments and summary/interval tables are included.
 
-## Data
+## Reproduce training
 
-Primary images come from the public **Paddy Doctor / Paddy Disease Classification** dataset. The raw image dataset is **not redistributed in this repository**. Notebook `00_PaddyDoctor_Download_Initial_Audit.ipynb` downloads the official source and creates the project structure in Google Drive.
+Obtain the [Paddy Disease Classification RGB dataset](https://www.kaggle.com/competitions/paddy-disease-classification); it is not redistributed. The original Colab project location is `/content/drive/MyDrive/PADDY_DOCTOR_Q1`. Kaggle credentials stay in the user's runtime and must not be committed.
 
-The original project path used in Colab is:
+Notebooks 05–07 cover reference training, 15 covers repeated P5, and 19 covers P6/P7 and frozen features. Exact executed P6/P7 numerical sources are retained in `reproducibility/notebook19_code/` for source-signature checks. Pretraining lineages differ; explicit initialization and source hashes are retained for the 168 repeated-matching and cultivar-sensitivity fits, while some reference initialization records are incomplete.
 
-```text
-/content/drive/MyDrive/PADDY_DOCTOR_Q1
-```
+Notebooks 10 and the equivalence component of 13 are exploratory tools and do not support quantitative claims in the current manuscript. Current endpoints and tables are identified in the supplementary material.
 
-For archival reproducibility, lightweight derived metadata and the frozen split/pair assignment files may be released separately when redistribution is appropriate. Raw images, checkpoints, credentials, and other large/private artifacts should remain outside GitHub.
+## Citation and license
 
-## Main reproducibility safeguards
+Use [CITATION.cff](CITATION.cff). No journal acceptance, published-article DOI or archival DOI is claimed. [Archiving guidance](docs/ARCHIVING.md) explains how to identify a fixed snapshot.
 
-- Exact duplicate audit with SHA-256.
-- Near-duplicate/perceptual audit with pHash and SSIM.
-- Scientific exclusion of the official Kaggle test set when overlap is detected.
-- Frozen protocol definitions before model comparison.
-- Three pre-specified training seeds.
-- Common optimization budget across architectures.
-- Temperature scaling fitted only on source-domain validation and frozen for target test.
-- Paired stratified bootstrap, exact McNemar with Holm correction, and GEE with robust standard errors.
-- Explainability interpreted within architecture/method, not as a cross-method ranking.
+Original code and associated repository documentation use the **[MIT License](LICENSE)**. Dataset material, pretrained weights and third-party components retain their respective terms; see [licensing scope](docs/LICENSING.md).
 
-## Training configuration
-
-The manuscript reports a common training budget of 30 epochs, 224×224 input resolution, batch size 32, AdamW, initial learning rate 3×10⁻⁴, weight decay 0.05, two warm-up epochs, cosine annealing, ImageNet-1k initialization, full fine-tuning, and checkpoint selection by validation Macro-F1.
-
-## Hardware/software reference
-
-Experiments were executed on an NVIDIA L4 (22 GB). The manuscript records PyTorch 2.11.0+cu128, torchvision 0.26.0+cu128, and timm 1.0.28. P1 and P4/P5 were executed in different Colab Python runtimes; see `docs/REPRODUCIBILITY.md`.
-
-Because Colab runtimes evolve, `requirements.txt` and `environment.yml` are convenience specifications rather than byte-for-byte reconstructions of every historical runtime. Exact environment snapshots should be archived before public release when available.
-
-## Automated repository audit
-
-A GitHub Actions workflow under `.github/workflows/repository-audit.yml` checks the expected notebook/script inventory, notebook JSON validity, Python syntax, misplaced notebooks, and accidentally tracked sensitive/large artifacts.
-
-## Citation and archival release
-
-A machine-readable citation file is provided in `CITATION.cff`. Before journal submission/public release, the authors should freeze a versioned release (recommended: `v1.0.0`), archive that release in a persistent repository such as Zenodo, and add the resulting DOI to this README and to the manuscript's Data/Code Availability statements. See `docs/ARCHIVING.md`.
-
-The GitHub repository should remain the actively maintained code repository; the archived DOI should identify the immutable version supporting the submitted manuscript.
-
-## License
-
-No license has been assigned yet. **A code license must be selected by the authors before public release.** This should be resolved before making the repository public so that permitted reuse is explicit.
+The three largest scientific files are distributed as binary parts to keep individual transfers manageable. `restore_large_files.py` reconstructs their exact original bytes and checks both part and full-file SHA-256 values before analysis.

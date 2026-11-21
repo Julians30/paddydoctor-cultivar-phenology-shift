@@ -1,0 +1,11 @@
+Setting,Configuration
+Initialization,Pretrained; historical tags not archived; new explicit tags in Table S37
+Input and batch,224 × 224 pixels; batch size 32
+Training horizon,30 complete epochs for every run
+Optimizer,AdamW; learning rate 3 × 10⁻⁴; weight decay 0.05
+Schedule,"Two warm-up epochs, then cosine annealing"
+Loss,Multiclass cross-entropy
+Precision,"Automatic mixed precision, FP16"
+Fine-tuning,All layers
+Seeds,"2026, 2027 and 2028"
+Checkpoint,Highest source-validation macro-F1 within 30 epochs

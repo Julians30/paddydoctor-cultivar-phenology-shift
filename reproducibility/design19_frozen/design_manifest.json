@@ -1,0 +1,29 @@
+{
+  "metadata_sha256": "62712567a3b81d56321c90075dc6558e4b4c3d536a2e08aae457c8a0fee293e5",
+  "designs": [
+    {
+      "protocol": "P6",
+      "n_images": 480,
+      "n_classes": 3,
+      "domains": [
+        "ADT45",
+        "OTHER_balanced"
+      ],
+      "assignments_sha256": "6bc1dec3307e2bd234de6a8dab9bd3f3929d577816ff05125b0e230c04a9f524",
+      "seed": 19001
+    },
+    {
+      "protocol": "P7",
+      "n_images": 300,
+      "n_classes": 3,
+      "domains": [
+        "AndraPonni",
+        "REST"
+      ],
+      "assignments_sha256": "e171d1ef75ee0ee9f8ae6659ff88d0dddb872809bb960eef0c0a66af6757097b",
+      "seed": 19002
+    }
+  ],
+  "selection": "metadata-only frozen design; three classes supported by both sensitivities",
+  "no_external_validation": true
+}

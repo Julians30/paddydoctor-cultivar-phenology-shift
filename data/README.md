@@ -1,5 +1,7 @@
-# Data
+# Source data
 
-Raw Paddy Doctor / Paddy Disease Classification images are not redistributed here.
+Obtain original RGB images from https://www.kaggle.com/competitions/paddy-disease-classification and consult its terms. Original RGB images are not redistributed.
 
-Run `notebooks/00_PaddyDoctor_Download_Initial_Audit.ipynb` to obtain the public source and create the local/Drive data structure. Reproducibility releases should include only lightweight derived metadata and split indices whose redistribution is permitted.
+Derived metadata, duplicate audits and frozen assignments are in `reproducibility/protocol_integrity/` and `reproducibility/notebook19_code/inputs/`. They do not establish independent plants, plots, farms or capture sessions. Recorded age is not validated phenological stage.
+
+Do not commit credentials, private runtime configuration or trained checkpoint payloads.

@@ -1,0 +1,7 @@
+Architecture A,Architecture B,Δ Macro-F1 (A−B),95% CI,Pboot(A>B),CI excludes 0
+ResNet-50,ConvNeXt-Tiny,-0.0120,[-0.0193; -0.0045],0.0000,Yes
+ResNet-50,ViT-S/16,-0.0168,[-0.0246; -0.0091],0.0000,Yes
+ResNet-50,Swin-Tiny,-0.0190,[-0.0264; -0.0115],0.0000,Yes
+ConvNeXt-Tiny,ViT-S/16,-0.0048,[-0.0108; 0.0008],0.0475,No
+ConvNeXt-Tiny,Swin-Tiny,-0.0070,[-0.0118; -0.0023],0.0025,Yes
+ViT-S/16,Swin-Tiny,-0.0022,[-0.0072; 0.0033],0.2070,No

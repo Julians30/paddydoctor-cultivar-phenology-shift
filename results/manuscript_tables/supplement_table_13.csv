@@ -1,0 +1,9 @@
+Audit component,Count,Reference proportion,Interpretation
+Original labeled training corpus,"10,407",100%,Starting labeled image universe
+Redundant exact-copy files removed,74,0.71% of labeled corpus,72 exact duplicate groups; no group crossed class labels
+Exact-clean labeled corpus,"10,333",99.29% of labeled corpus,Unique labeled images after SHA-256 deduplication
+Additional perceptual near-duplicates removed,4,0.04% of exact-clean corpus,Conservative pHash ≤ 4 and SSIM ≥ 0.95 screen
+Final P1 image universe,"10,329",99.25% of labeled corpus,Leakage-audited IID source for P1
+Official Kaggle test images,"3,469",100% of official test,Unlabeled public competition test set
+Official-test images in exact train-test overlaps,51,1.47% of official test,49 unique SHA-256 contents
+Official-test images flagged by perceptual screen,53,1.53% of official test,Near-duplicate/perceptual audit flags; may overlap exact category

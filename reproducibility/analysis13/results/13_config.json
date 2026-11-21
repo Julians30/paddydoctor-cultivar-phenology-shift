@@ -1,0 +1,35 @@
+{
+  "notebook": "13_PaddyDoctor_Advanced_Reliability_Equivalence_Selective_Conformal",
+  "n_bootstrap": 5000,
+  "bootstrap_seed": 20260828,
+  "primary_metric": "macro_f1",
+  "equivalence_margin_absolute_macro_f1": 0.01,
+  "equivalence_ci": "90% percentile bootstrap CI (TOST-compatible CI rule)",
+  "estimation_ci": "95% percentile bootstrap CI",
+  "selective_coverages": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "conformal_alphas": [
+    0.1,
+    0.05
+  ],
+  "conformal_method": "LAC nonconformity score = 1 - p_true",
+  "conformal_interpretation": "Empirical prediction-set diagnostic only; validation was previously used for checkpoint selection and temperature scaling, so strict split-conformal finite-sample validity is not claimed.",
+  "models": [
+    "resnet50",
+    "convnext_tiny",
+    "vit_small_patch16_224",
+    "swin_tiny_patch4_window7_224"
+  ],
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ]
+}

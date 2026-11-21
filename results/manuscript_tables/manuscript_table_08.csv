@@ -1,0 +1,9 @@
+Target,Architecture,Wrong in all seeds,Control correct and transfer wrong,High confidence raw,High confidence calibrated
+ADT45,ResNet-50,41,22,0,2
+ADT45,ConvNeXt-Tiny,29,26,10,7
+ADT45,ViT-S/16,28,26,4,2
+ADT45,Swin-Tiny,21,15,8,4
+OTHER,ResNet-50,37,26,1,1
+OTHER,ConvNeXt-Tiny,10,9,4,3
+OTHER,ViT-S/16,24,23,2,1
+OTHER,Swin-Tiny,16,15,2,1

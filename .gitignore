@@ -37,3 +37,8 @@ Thumbs.db
 exports/
 wandb/
 *.zip
+
+# Exact large files reconstructed from checksummed repository parts
+/reproducibility/19_PaddyDoctor_RESULTADOS.zip
+/reproducibility/inputs/15_P5_Rematching_5x3_30ep_v1_RESULTADOS.zip
+/reproducibility/revision3_results/ensemble_predictions.csv

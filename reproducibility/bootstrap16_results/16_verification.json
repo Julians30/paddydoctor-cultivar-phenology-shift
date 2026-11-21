@@ -1,0 +1,19 @@
+{
+  "completed_runs": 120,
+  "evaluations": 240,
+  "result_files_sha256_verified": 2400,
+  "checkpoint_hashes_recorded_but_weights_not_in_results_zip": 120,
+  "executed_source_hash_verified": true,
+  "metadata_hash_verified": true,
+  "assignment_hashes_verified": 5,
+  "plan_signature_verified": true,
+  "note": "Checkpoint payloads were not supplied in the results ZIP; their bytes were not independently checked here.",
+  "numerical_checks": 960,
+  "max_absolute_discrepancy": 0.0,
+  "original_seed_losses_reproduced": 120,
+  "macro_comparisons": 40,
+  "matched_stratified_draws": true,
+  "replicates_per_comparison": 5000,
+  "neural_network_training_performed": false,
+  "elapsed_seconds": 3.161420712999984
+}

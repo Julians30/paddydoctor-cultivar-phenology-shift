@@ -1,0 +1,8 @@
+Comparison,Scalar checks,Maximum absolute difference
+archive_accuracy,216,1.110e-16
+archive_brier,216,4.441e-16
+archive_ece_uniform_15,216,1.475e-15
+archive_mce_uniform_15,216,5.551e-16
+archive_nll,216,8.882e-16
+macro_f1_sklearn,216,0.000e+00
+nll_sklearn,216,0.000e+00

@@ -1,0 +1,4 @@
+Study,Data and shift,Reliability analysis,Training-domain control and age matching
+Singh et al. [25],Paddy Doctor; synthetic feature-space OOD,Conditional calibration and uncertainty,Not a real cultivar-transfer matched-control design
+Xiang et al. [26],PlantVillage to PlantDoc,"Calibration, threshold transfer and rejection",Cross-dataset setting; no exact rice age matching
+Present study,"ADT45 versus pooled OTHER, bidirectional","Source calibration, rule transfer and recurrent errors",Identical target cases; same-domain control; exact class and age matching

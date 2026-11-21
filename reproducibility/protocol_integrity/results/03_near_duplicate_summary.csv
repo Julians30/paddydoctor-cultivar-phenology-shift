@@ -1,0 +1,9 @@
+metric,value
+original_images,10407
+exact_deduplicated_images,10333
+confirmed_train_near_duplicate_pairs,4
+nearclean_images,10329
+additional_images_removed_near_duplicates,4
+confirmed_train_test_near_duplicate_pairs,53
+unique_test_images_near_duplicate_with_train,53
+visual_groups_with_metadata_inconsistency,0

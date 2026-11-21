@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "temperature_recovers_known_miscalibration": true,
+    "vector_proper_probabilities": true,
+    "dirichlet_odir_proper_probabilities": true,
+    "analytic_normal_bias_adjustment": true,
+    "all_16_mixed_fits_converged": true,
+    "all_96_source_calibrators_converged": true,
+    "target_calibration_evaluation_disjoint": true,
+    "120_BCa_intervals_finite_ordered": true,
+    "CRC_source_bound_met": true,
+    "CRC_nested_mean_set_sizes": true,
+    "class_F1_points_match_sklearn": true
+  },
+  "max_class_F1_point_error": 1.1102230246251565e-16,
+  "source_script_sha256": "7b788c659e0f960d4007fe495e6d49cd4959335ef5f389e62c993392dccf8e21"
+}

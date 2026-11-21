@@ -12,87 +12,12 @@ permissions:
 jobs:
   audit:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: Audit repository structure and syntax
-        shell: bash
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import json
-          import py_compile
-          import subprocess
-          import sys
-
-          errors = []
-
-          notebooks = sorted(Path('notebooks').glob('*.ipynb'))
-          scripts = sorted(Path('scripts').glob('*.py'))
-          misplaced = sorted(Path('scripts').glob('*.ipynb'))
-
-          if len(notebooks) != 13:
-              errors.append(f'Expected 13 notebooks, found {len(notebooks)}')
-          if len(scripts) != 13:
-              errors.append(f'Expected 13 Python scripts, found {len(scripts)}')
-          if misplaced:
-              errors.append('Misplaced notebooks found in scripts/: ' + ', '.join(str(p) for p in misplaced))
-
-          notebook_stems = {p.stem for p in notebooks}
-          script_stems = {p.stem for p in scripts}
-          if notebook_stems != script_stems:
-              missing_scripts = sorted(notebook_stems - script_stems)
-              missing_notebooks = sorted(script_stems - notebook_stems)
-              if missing_scripts:
-                  errors.append('Notebook(s) without matching script: ' + ', '.join(missing_scripts))
-              if missing_notebooks:
-                  errors.append('Script(s) without matching notebook: ' + ', '.join(missing_notebooks))
-
-          for nb in notebooks:
-              try:
-                  with nb.open('r', encoding='utf-8') as f:
-                      data = json.load(f)
-                  if 'cells' not in data or 'nbformat' not in data:
-                      errors.append(f'Invalid notebook structure: {nb}')
-              except Exception as exc:
-                  errors.append(f'Notebook JSON error in {nb}: {exc}')
-
-          for script in scripts:
-              try:
-                  py_compile.compile(str(script), doraise=True)
-              except Exception as exc:
-                  errors.append(f'Python syntax error in {script}: {exc}')
-
-          tracked = subprocess.check_output(['git', 'ls-files'], text=True).splitlines()
-          forbidden_suffixes = ('.pt', '.pth', '.ckpt', '.zip')
-          for item in tracked:
-              p = Path(item)
-              lower_parts = [part.lower() for part in p.parts]
-              if p.name.lower() == 'kaggle.json':
-                  errors.append(f'Credential file must not be tracked: {item}')
-              if '.kaggle' in lower_parts:
-                  errors.append(f'Kaggle credential directory must not be tracked: {item}')
-              if 'config' in lower_parts and p.name.lower() != 'readme.md':
-                  errors.append(f'Private config file must not be tracked: {item}')
-              if item.lower().endswith(forbidden_suffixes):
-                  errors.append(f'Large/binary artifact must not be tracked: {item}')
-              if p.name.lower().startswith('.env'):
-                  errors.append(f'Environment secret file must not be tracked: {item}')
-
-          if errors:
-              print('\nRepository audit FAILED:\n')
-              for err in errors:
-                  print(f'- {err}')
-              sys.exit(1)
-
-          print('Repository audit PASSED')
-          print(f'Notebooks: {len(notebooks)}')
-          print(f'Scripts: {len(scripts)}')
-          PY
+      - name: Install audit dependency
+        run: python -m pip install 'PyYAML>=6,<7'
+      - name: Check inventory syntax citation and frozen-output hashes
+        run: python scripts/audit_repository.py

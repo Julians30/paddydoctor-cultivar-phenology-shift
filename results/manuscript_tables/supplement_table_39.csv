@@ -1,0 +1,8 @@
+Component,df,ADT45 SS,ADT45 % SS,OTHER SS,OTHER % SS
+Configuration,3,0.009357,3.90,0.254699,55.36
+Matching,4,0.035422,14.75,0.026086,5.67
+Seed,2,0.001258,0.52,0.003837,0.83
+Configuration × Matching,12,0.053401,22.24,0.065309,14.20
+Configuration × Seed,6,0.004224,1.76,0.016052,3.49
+Matching × Seed,8,0.020192,8.41,0.030844,6.70
+Configuration × Matching × Seed,24,0.116278,48.42,0.063218,13.74

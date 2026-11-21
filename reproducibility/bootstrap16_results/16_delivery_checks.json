@@ -1,0 +1,16 @@
+{
+  "notebook_valid": true,
+  "all_code_cells_compile": true,
+  "embedded_module_matches": true,
+  "paired_seed_indexing_verified_independently": true,
+  "exact_reproduction_csv_count": 6,
+  "csv_files": [
+    "16_class_f1_recall_bootstrap.csv",
+    "16_descriptive_across_matching_summary.csv",
+    "16_overlap_between_cohorts.csv",
+    "16_paired_bootstrap_by_matching.csv",
+    "16_per_seed_paired_bootstrap.csv",
+    "initialized_weight_provenance.csv"
+  ],
+  "full_precision_replicates": true
+}

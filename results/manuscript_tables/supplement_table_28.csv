@@ -1,0 +1,4 @@
+Protocol,Crop area scale,Aspect-ratio argument,Resolved source recipe
+P1,0.85-1.00,"Explicit ratio=(0.90,1.10)",Aspect ratio 0.90-1.10
+P4,0.85-1.00,Argument omitted,torchvision 0.26 default 0.75-4/3
+P5,0.85-1.00,Argument omitted,torchvision 0.26 default 0.75-4/3

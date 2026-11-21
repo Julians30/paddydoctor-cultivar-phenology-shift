@@ -1,0 +1,9 @@
+Protocol,Evaluation,N,Accuracy,Macro F1
+P4,train,1848,0.504,0.238
+P4,validation,616,0.505,0.240
+P4,test,616,0.487,0.227
+P4,all pool resubstitution,3080,0.501,Not evaluated
+P5,train,300,0.563,0.526
+P5,validation,100,0.510,0.463
+P5,test,100,0.450,0.394
+P5,all pool resubstitution,500,0.530,Not evaluated

@@ -1,49 +1,7 @@
-# Pre-submission archiving checklist
+# Identifying an archival snapshot
 
-This checklist is intended for the manuscript:
+Record a full Git commit SHA with `CITATION.cff`, environment records and `reproducibility/MANIFEST_SHA256.csv` to identify a fixed scientific snapshot. A Git tag or persistent archive can identify that snapshot if the authors create one. Record a DOI only after assignment; no published-article or archival DOI is asserted here.
 
-**Reliability of deep vision models under cultivar-associated domain shift in rice plant-health classification: a phenology-controlled evaluation**
+Original RGB images and large trained checkpoints are excluded. Derived predictions, histories, source-validation caches, assignments, initialization provenance, calibrator parameters and numerical checks support reproducibility. Checksums identify supplied bytes; they do not establish independent acquisition or reconstruct missing initialization records.
 
-## Before making the repository public
-
-- [ ] Confirm that no credentials, private configuration files, raw checkpoints, or restricted binary artifacts are tracked.
-- [ ] Confirm that all 13 canonical notebooks have matching Python script exports.
-- [ ] Confirm that the manuscript title in `README.md` and `CITATION.cff` matches the submission version.
-- [ ] Select a code license and add the corresponding `LICENSE` file.
-- [ ] Confirm the final author list and ORCID identifiers in `CITATION.cff`.
-- [ ] Confirm that raw Paddy Doctor images are not redistributed.
-- [ ] Confirm that the public supplementary/machine-readable files correspond to the frozen manuscript results.
-
-## Review-time access
-
-If the manuscript is handled under an anonymized review workflow, provide reviewers with a read-only anonymized mirror rather than the identifiable GitHub URL. The mirror must redact author names, usernames, ORCID identifiers, institutional names, email addresses, and other identity-bearing metadata while preserving notebooks, scripts, documentation, and frozen result artifacts required for technical review.
-
-## Freeze the submission version
-
-1. Make the repository public only after the manuscript/repository audit is complete and the review-access strategy is confirmed.
-2. Create a GitHub release/tag named `v1.0.0` (recommended label: `Precision Agriculture submission`).
-3. Do not change the scientific outputs associated with that tagged version after release.
-4. Archive the GitHub release in a persistent repository such as Zenodo.
-5. Record the resulting DOI in:
-   - the GitHub README;
-   - the manuscript Data Availability statement;
-   - the manuscript Code Availability statement, if used;
-   - `CITATION.cff` in a subsequent metadata-only commit if appropriate.
-
-## Recommended archive contents
-
-The archived submission release should contain or point to:
-
-- canonical notebooks and matching Python scripts;
-- frozen split/pair definitions used by P1, P4, and P5;
-- lightweight audited metadata permitted for redistribution;
-- machine-readable statistical summaries used in the manuscript/supplement;
-- figure-generation code;
-- `requirements.txt` and `environment.yml`;
-- reproducibility documentation.
-
-Do not archive credentials, raw competition images if redistribution is not authorized, large checkpoints unless explicitly intended and permitted, or transient Colab caches.
-
-## Relationship between GitHub and the DOI archive
-
-GitHub is the actively maintained development repository. The DOI archive should identify the immutable version that supports the submitted manuscript. Later code improvements may continue on GitHub without changing the archived scientific record.
+Original notebooks/scripts 00–12 retain their Git identity. The current scope in the README determines the reported endpoints; exploratory source tools do not imply additional manuscript claims.

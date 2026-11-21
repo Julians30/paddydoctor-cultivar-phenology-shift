@@ -1,0 +1,14 @@
+Item,Recorded specification
+Design,5 constructions × 4 configurations × 3 seeds × 2 training domains; 120 fits; 240 test evaluations
+Matching seeds,"31001, 31002, 31003, 31004, 31005"
+Training seeds,"2026, 2027, 2028"
+Within each domain,300 train / 100 validation / 100 test; 20 test images per class
+Image overlap,"2,828 unique images; 324–351 shared per pair of 1,000-image constructions; Jaccard 0.1933–0.2129"
+Recorded age,45–80 days in new constructions; original P5 45–82 days
+Runtime,Python 3.13.16; torch 2.14.1+cu130; torchvision 0.29.1+cu130; timm 1.0.28; NVIDIA L4
+ResNet-50,resnet50.a1_in1k
+ConvNeXt-Tiny,convnext_tiny.in12k_ft_in1k
+ViT-S/16,vit_small_patch16_224.augreg_in21k_ft_in1k
+Swin-Tiny,swin_tiny_patch4_window7_224.ms_in1k
+Retained provenance,"Pretrained file and tensor hashes, initialized state hash, source checksum, environment, assignment hashes, per-run completion receipts"
+Weights audit scope,"New results ZIP records checkpoint hashes but excludes checkpoint payloads; this postprocessing verification checks result files, not the bytes of those trained checkpoints"

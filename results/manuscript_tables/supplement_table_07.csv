@@ -1,0 +1,5 @@
+Architecture,Original mean Macro-F1,Bootstrap probability rank 1,Replicates
+ResNet-50,0.9587,0.0000,2000
+ConvNeXt-Tiny,0.9707,0.0010,2000
+ViT-S/16,0.9755,0.2070,2000
+Swin-Tiny,0.9777,0.7920,2000

@@ -1,0 +1,7 @@
+Target,Method,NLL,Brier
+ADT45,raw,2.1837,0.7584
+ADT45,source_temperature,1.6076,0.7078
+ADT45,target20_temperature,1.2435,0.6218
+OTHER,raw,1.4073,0.6024
+OTHER,source_temperature,1.2662,0.5821
+OTHER,target20_temperature,0.9960,0.5143

@@ -1,0 +1,9 @@
+Target,Method,Plugin L1 ECE,Adjusted L1 ECE
+ADT45,dirichlet_odir,0.2999,0.2963
+ADT45,raw,0.3082,0.3030
+ADT45,temperature,0.2507,0.2437
+ADT45,vector,0.2848,0.2799
+OTHER,dirichlet_odir,0.2704,0.2674
+OTHER,raw,0.2365,0.2322
+OTHER,temperature,0.2102,0.2035
+OTHER,vector,0.2503,0.2470

@@ -1,0 +1,9 @@
+Protocol,Target,Condition,Coverage,Mean set size,Singleton fraction
+P4,ADT45,control,0.9468,1.1062,0.9168
+P4,ADT45,transfer,0.4261,0.8221,0.7953
+P4,OTHER,control,0.9643,0.9877,0.9828
+P4,OTHER,transfer,0.6366,1.4809,0.6718
+P5,ADT45,control,0.9375,1.1892,0.8433
+P5,ADT45,transfer,0.6142,1.4408,0.6283
+P5,OTHER,control,0.9683,1.1142,0.9117
+P5,OTHER,transfer,0.6983,1.3933,0.6233

@@ -1,0 +1,4 @@
+pHash cutoff,Train↔train pairs,Additional train images removed,Near-clean n,Train↔official-test pairs,Unique official-test images
+≤ 3,4,4,"10,329",53,53
+≤ 4,4,4,"10,329",53,53
+≤ 5,4,4,"10,329",53,53

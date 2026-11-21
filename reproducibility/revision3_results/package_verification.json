@@ -1,0 +1,27 @@
+{
+  "csv_tables_checked": 16,
+  "all_cells_identical": true,
+  "files": [
+    "AURC_by_run.csv",
+    "P4_ADT45_class_loss_and_OTHER_concentration.csv",
+    "P5_ADT45_class_loss_and_OTHER_concentration.csv",
+    "class_cultivar_concentration.csv",
+    "class_loss_concentration_correlations.csv",
+    "class_recall_exact_intervals.csv",
+    "cultivar_only_baseline.csv",
+    "cultivar_training_rules.csv",
+    "direction_ranking_sensitivity.csv",
+    "ensemble_metrics.csv",
+    "ensemble_predictions.csv",
+    "ensemble_temperature_fits.csv",
+    "loss_by_seed.csv",
+    "loss_seed_and_image_sensitivity.csv",
+    "paired_ECE_changes.csv",
+    "stricter_source_rules.csv"
+  ],
+  "visual_qa": {
+    "main_pages_reviewed": 22,
+    "supplement_pages_reviewed": 38,
+    "no_clipping_observed": true
+  }
+}

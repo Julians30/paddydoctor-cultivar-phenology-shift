@@ -1,0 +1,81 @@
+Target,Architecture,Class,Control F1,Transfer F1,Control recall,Transfer recall,N
+ADT45,ConvNeXt-Tiny,bact. leaf blight,0.628,0.000,0.667,0.000,14
+ADT45,ConvNeXt-Tiny,bact. leaf streak,0.916,0.110,0.909,0.076,22
+ADT45,ConvNeXt-Tiny,bact. panicle blight,0.957,0.328,0.978,0.222,15
+ADT45,ConvNeXt-Tiny,blast,0.969,0.583,0.975,0.539,157
+ADT45,ConvNeXt-Tiny,brown spot,0.766,0.275,0.756,0.321,26
+ADT45,ConvNeXt-Tiny,dead heart,0.980,0.870,0.964,0.906,92
+ADT45,ConvNeXt-Tiny,downy mildew,0.939,0.139,0.931,0.184,58
+ADT45,ConvNeXt-Tiny,hispa,0.954,0.627,0.947,0.603,152
+ADT45,ConvNeXt-Tiny,normal,0.914,0.421,0.962,0.448,61
+ADT45,ConvNeXt-Tiny,tungro,0.885,0.043,0.807,0.053,19
+ADT45,ResNet-50,bact. leaf blight,0.492,0.000,0.690,0.000,14
+ADT45,ResNet-50,bact. leaf streak,0.877,0.000,0.864,0.000,22
+ADT45,ResNet-50,bact. panicle blight,0.896,0.141,0.867,0.178,15
+ADT45,ResNet-50,blast,0.959,0.451,0.968,0.378,157
+ADT45,ResNet-50,brown spot,0.684,0.200,0.667,0.359,26
+ADT45,ResNet-50,dead heart,0.967,0.797,0.957,0.736,92
+ADT45,ResNet-50,downy mildew,0.895,0.249,0.856,0.362,58
+ADT45,ResNet-50,hispa,0.930,0.491,0.914,0.421,152
+ADT45,ResNet-50,normal,0.859,0.394,0.896,0.366,61
+ADT45,ResNet-50,tungro,0.751,0.025,0.667,0.035,19
+ADT45,Swin-Tiny,bact. leaf blight,0.758,0.042,0.810,0.024,14
+ADT45,Swin-Tiny,bact. leaf streak,0.883,0.176,0.864,0.136,22
+ADT45,Swin-Tiny,bact. panicle blight,0.875,0.197,0.933,0.133,15
+ADT45,Swin-Tiny,blast,0.955,0.531,0.968,0.463,157
+ADT45,Swin-Tiny,brown spot,0.778,0.244,0.782,0.308,26
+ADT45,Swin-Tiny,dead heart,0.972,0.804,0.953,0.841,92
+ADT45,Swin-Tiny,downy mildew,0.940,0.220,0.937,0.264,58
+ADT45,Swin-Tiny,hispa,0.955,0.685,0.952,0.741,152
+ADT45,Swin-Tiny,normal,0.913,0.496,0.918,0.421,61
+ADT45,Swin-Tiny,tungro,0.865,0.147,0.789,0.228,19
+ADT45,ViT-S/16,bact. leaf blight,0.749,0.080,0.810,0.048,14
+ADT45,ViT-S/16,bact. leaf streak,0.909,0.069,0.909,0.061,22
+ADT45,ViT-S/16,bact. panicle blight,0.956,0.359,0.956,0.244,15
+ADT45,ViT-S/16,blast,0.971,0.531,0.979,0.459,157
+ADT45,ViT-S/16,brown spot,0.774,0.129,0.744,0.115,26
+ADT45,ViT-S/16,dead heart,0.982,0.776,0.967,0.826,92
+ADT45,ViT-S/16,downy mildew,0.941,0.266,0.920,0.305,58
+ADT45,ViT-S/16,hispa,0.954,0.575,0.965,0.623,152
+ADT45,ViT-S/16,normal,0.914,0.339,0.929,0.350,61
+ADT45,ViT-S/16,tungro,0.839,0.053,0.772,0.070,19
+OTHER,ConvNeXt-Tiny,bact. leaf blight,0.966,0.104,1.000,0.143,14
+OTHER,ConvNeXt-Tiny,bact. leaf streak,0.977,0.247,0.970,0.212,22
+OTHER,ConvNeXt-Tiny,bact. panicle blight,1.000,0.684,1.000,0.622,15
+OTHER,ConvNeXt-Tiny,blast,0.978,0.647,0.992,0.618,157
+OTHER,ConvNeXt-Tiny,brown spot,0.960,0.185,0.923,0.256,26
+OTHER,ConvNeXt-Tiny,dead heart,1.000,0.891,1.000,0.920,92
+OTHER,ConvNeXt-Tiny,downy mildew,0.940,0.212,0.994,0.218,58
+OTHER,ConvNeXt-Tiny,hispa,0.974,0.747,0.950,0.684,152
+OTHER,ConvNeXt-Tiny,normal,0.970,0.811,0.978,0.945,61
+OTHER,ConvNeXt-Tiny,tungro,0.914,0.139,0.842,0.123,19
+OTHER,ResNet-50,bact. leaf blight,0.945,0.083,1.000,0.238,14
+OTHER,ResNet-50,bact. leaf streak,0.957,0.114,0.985,0.182,22
+OTHER,ResNet-50,bact. panicle blight,0.968,0.204,0.978,0.200,15
+OTHER,ResNet-50,blast,0.971,0.473,0.972,0.427,157
+OTHER,ResNet-50,brown spot,0.930,0.149,0.936,0.231,26
+OTHER,ResNet-50,dead heart,0.995,0.713,0.993,0.638,92
+OTHER,ResNet-50,downy mildew,0.930,0.104,0.989,0.092,58
+OTHER,ResNet-50,hispa,0.957,0.492,0.928,0.373,152
+OTHER,ResNet-50,normal,0.957,0.534,0.967,0.628,61
+OTHER,ResNet-50,tungro,0.914,0.083,0.842,0.140,19
+OTHER,Swin-Tiny,bact. leaf blight,0.955,0.033,1.000,0.048,14
+OTHER,Swin-Tiny,bact. leaf streak,0.964,0.189,0.985,0.152,22
+OTHER,Swin-Tiny,bact. panicle blight,1.000,0.599,1.000,0.600,15
+OTHER,Swin-Tiny,blast,0.982,0.611,1.000,0.558,157
+OTHER,Swin-Tiny,brown spot,0.925,0.245,0.949,0.410,26
+OTHER,Swin-Tiny,dead heart,1.000,0.895,1.000,0.884,92
+OTHER,Swin-Tiny,downy mildew,0.980,0.212,0.977,0.218,58
+OTHER,Swin-Tiny,hispa,0.972,0.746,0.950,0.693,152
+OTHER,Swin-Tiny,normal,0.965,0.804,0.973,0.836,61
+OTHER,Swin-Tiny,tungro,0.914,0.166,0.842,0.211,19
+OTHER,ViT-S/16,bact. leaf blight,0.966,0.045,1.000,0.048,14
+OTHER,ViT-S/16,bact. leaf streak,1.000,0.285,1.000,0.348,22
+OTHER,ViT-S/16,bact. panicle blight,0.989,0.444,0.978,0.400,15
+OTHER,ViT-S/16,blast,0.985,0.481,0.996,0.406,157
+OTHER,ViT-S/16,brown spot,0.960,0.208,0.923,0.308,26
+OTHER,ViT-S/16,dead heart,0.998,0.903,1.000,0.942,92
+OTHER,ViT-S/16,downy mildew,0.958,0.162,0.989,0.167,58
+OTHER,ViT-S/16,hispa,0.972,0.679,0.954,0.621,152
+OTHER,ViT-S/16,normal,0.957,0.759,0.973,0.874,61
+OTHER,ViT-S/16,tungro,0.934,0.322,0.877,0.368,19

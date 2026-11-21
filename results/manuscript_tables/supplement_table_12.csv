@@ -1,0 +1,41 @@
+Architecture,Class,F1 mean ± SD,Recall,Precision,Support
+ConvNeXt-Tiny,bacterial leaf blight,0.9749 ± 0.0143,0.9640,0.9862,74
+ConvNeXt-Tiny,bacterial leaf streak,0.9680 ± 0.0158,0.9815,0.9549,36
+ConvNeXt-Tiny,bacterial panicle blight,0.9812 ± 0.0172,1.0000,0.9635,43
+ConvNeXt-Tiny,blast,0.9680 ± 0.0027,0.9680,0.9680,229
+ConvNeXt-Tiny,brown spot,0.9647 ± 0.0037,0.9762,0.9535,140
+ConvNeXt-Tiny,dead heart,0.9968 ± 0.0037,0.9968,0.9968,206
+ConvNeXt-Tiny,downy mildew,0.9365 ± 0.0289,0.9313,0.9421,97
+ConvNeXt-Tiny,hispa,0.9756 ± 0.0057,0.9821,0.9694,224
+ConvNeXt-Tiny,normal,0.9667 ± 0.0060,0.9577,0.9759,268
+ConvNeXt-Tiny,tungro,0.9747 ± 0.0084,0.9707,0.9788,159
+ResNet-50,bacterial leaf blight,0.9484 ± 0.0069,0.9505,0.9466,74
+ResNet-50,bacterial leaf streak,0.9420 ± 0.0192,0.9722,0.9140,36
+ResNet-50,bacterial panicle blight,0.9884 ± 0.0002,0.9922,0.9849,43
+ResNet-50,blast,0.9555 ± 0.0097,0.9665,0.9449,229
+ResNet-50,brown spot,0.9525 ± 0.0019,0.9548,0.9503,140
+ResNet-50,dead heart,0.9919 ± 0.0014,0.9887,0.9951,206
+ResNet-50,downy mildew,0.9231 ± 0.0146,0.9072,0.9397,97
+ResNet-50,hispa,0.9659 ± 0.0055,0.9702,0.9617,224
+ResNet-50,normal,0.9651 ± 0.0048,0.9465,0.9847,268
+ResNet-50,tungro,0.9544 ± 0.0025,0.9665,0.9430,159
+Swin-Tiny,bacterial leaf blight,0.9843 ± 0.0038,0.9865,0.9821,74
+Swin-Tiny,bacterial leaf streak,0.9769 ± 0.0081,0.9815,0.9725,36
+Swin-Tiny,bacterial panicle blight,0.9847 ± 0.0064,0.9922,0.9776,43
+Swin-Tiny,blast,0.9746 ± 0.0027,0.9782,0.9711,229
+Swin-Tiny,brown spot,0.9753 ± 0.0035,0.9881,0.9629,140
+Swin-Tiny,dead heart,1.0000 ± 0.0000,1.0000,1.0000,206
+Swin-Tiny,downy mildew,0.9499 ± 0.0098,0.9416,0.9589,97
+Swin-Tiny,hispa,0.9770 ± 0.0046,0.9807,0.9735,224
+Swin-Tiny,normal,0.9742 ± 0.0022,0.9639,0.9848,268
+Swin-Tiny,tungro,0.9800 ± 0.0019,0.9769,0.9832,159
+ViT-S/16,bacterial leaf blight,0.9732 ± 0.0177,0.9775,0.9692,74
+ViT-S/16,bacterial leaf streak,0.9863 ± 0.0000,1.0000,0.9730,36
+ViT-S/16,bacterial panicle blight,0.9922 ± 0.0068,0.9845,1.0000,43
+ViT-S/16,blast,0.9620 ± 0.0077,0.9752,0.9493,229
+ViT-S/16,brown spot,0.9692 ± 0.0043,0.9762,0.9625,140
+ViT-S/16,dead heart,0.9992 ± 0.0014,1.0000,0.9984,206
+ViT-S/16,downy mildew,0.9402 ± 0.0170,0.9210,0.9607,97
+ViT-S/16,hispa,0.9778 ± 0.0023,0.9821,0.9735,224
+ViT-S/16,normal,0.9748 ± 0.0029,0.9627,0.9873,268
+ViT-S/16,tungro,0.9800 ± 0.0048,0.9769,0.9831,159

@@ -1,0 +1,23 @@
+{
+  "csv_files_identical": 11,
+  "filenames": [
+    "P5_candidate_support_by_class.csv",
+    "P5_candidate_support_by_class_and_age.csv",
+    "P5_cultivar_class_composition_by_split.csv",
+    "P5_exact_age_counts_by_class_and_split.csv",
+    "P5_frozen_pair_image_assignments.csv",
+    "P5_normal_Ponni_by_split.csv",
+    "class_control_transfer_differences.csv",
+    "class_performance_P4_P5.csv",
+    "confusion_matrices_all_models_and_seeds.csv",
+    "paired_calibration_score_gains.csv",
+    "persistent_errors_by_class.csv"
+  ],
+  "new_training": false,
+  "main_pages_visually_reviewed": 21,
+  "supplement_pages_visually_reviewed": 33,
+  "main_tables": 8,
+  "main_figures": 5,
+  "supplement_tables": 35,
+  "supplement_figures": 10
+}

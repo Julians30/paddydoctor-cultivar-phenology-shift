@@ -1,0 +1,6 @@
+component,path,expected_complete,observed_complete,status
+P1,/content/drive/MyDrive/PADDY_DOCTOR_Q1/results/05_P1_30ep_noES,12,12,OK
+P4,/content/drive/MyDrive/PADDY_DOCTOR_Q1/results/06_P4_cross_cultivar_30ep_noES,24,24,OK
+P5,/content/drive/MyDrive/PADDY_DOCTOR_Q1/results/07_P5_exact_age_matched_30ep_noES,24,24,OK
+N09_validation_cache_npz,/content/drive/MyDrive/PADDY_DOCTOR_Q1/results/09_calibration_reliability/validation_cache,60,60,OK
+N09_validation_cache_json,/content/drive/MyDrive/PADDY_DOCTOR_Q1/results/09_calibration_reliability/validation_cache,60,60,OK

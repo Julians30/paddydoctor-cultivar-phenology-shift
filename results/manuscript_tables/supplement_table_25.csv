@@ -1,0 +1,31 @@
+Protocol,Target,Class,N,Always wrong,Control correct and transfer wrong,High confidence raw,High confidence TS
+P4,ADT45,bact. leaf blight,14,14,8,5,2
+P4,ADT45,bact. leaf streak,22,17,16,2,2
+P4,ADT45,bact. panicle blight,15,9,8,6,6
+P4,ADT45,blast,157,45,41,22,20
+P4,ADT45,brown spot,26,15,9,1,0
+P4,ADT45,dead heart,92,3,0,1,0
+P4,ADT45,downy mildew,58,36,33,7,5
+P4,ADT45,hispa,152,40,38,7,2
+P4,ADT45,normal,61,26,23,3,1
+P4,ADT45,tungro,19,16,11,6,4
+P4,OTHER,bact. leaf blight,14,11,11,1,0
+P4,OTHER,bact. leaf streak,22,15,13,2,1
+P4,OTHER,bact. panicle blight,15,3,3,0,0
+P4,OTHER,blast,157,35,32,5,1
+P4,OTHER,brown spot,26,12,10,4,1
+P4,OTHER,dead heart,92,3,3,1,0
+P4,OTHER,downy mildew,58,37,36,8,2
+P4,OTHER,hispa,152,30,27,5,3
+P4,OTHER,normal,61,2,1,1,0
+P4,OTHER,tungro,19,13,10,5,1
+P5,ADT45,blast,20,3,2,2,1
+P5,ADT45,dead heart,20,2,2,0,0
+P5,ADT45,downy mildew,20,12,10,3,2
+P5,ADT45,hispa,20,7,7,2,2
+P5,ADT45,normal,20,5,5,3,2
+P5,OTHER,blast,20,4,4,2,1
+P5,OTHER,dead heart,20,0,0,0,0
+P5,OTHER,downy mildew,20,3,3,2,2
+P5,OTHER,hispa,20,2,1,0,0
+P5,OTHER,normal,20,1,1,0,0

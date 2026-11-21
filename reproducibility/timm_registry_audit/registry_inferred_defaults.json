@@ -1,0 +1,42 @@
+[
+  {
+    "model": "resnet50",
+    "registry_tag": "a1_in1k",
+    "registry_lineage": "ImageNet-1k",
+    "source_file": "resnet.py",
+    "line": 906,
+    "url": "https://github.com/huggingface/pytorch-image-models/blob/v1.0.28/timm/models/resnet.py#L906",
+    "loaded_weight_checksum": "Not retained",
+    "interpretation": "Static default of unmodified v1.0.28 registry; not a historical execution record"
+  },
+  {
+    "model": "convnext_tiny",
+    "registry_tag": "in12k_ft_in1k",
+    "registry_lineage": "ImageNet-12k then ImageNet-1k",
+    "source_file": "convnext.py",
+    "line": 738,
+    "url": "https://github.com/huggingface/pytorch-image-models/blob/v1.0.28/timm/models/convnext.py#L738",
+    "loaded_weight_checksum": "Not retained",
+    "interpretation": "Static default of unmodified v1.0.28 registry; not a historical execution record"
+  },
+  {
+    "model": "vit_small_patch16_224",
+    "registry_tag": "augreg_in21k_ft_in1k",
+    "registry_lineage": "ImageNet-21k then ImageNet-1k",
+    "source_file": "vision_transformer.py",
+    "line": 1841,
+    "url": "https://github.com/huggingface/pytorch-image-models/blob/v1.0.28/timm/models/vision_transformer.py#L1841",
+    "loaded_weight_checksum": "Not retained",
+    "interpretation": "Static default of unmodified v1.0.28 registry; not a historical execution record"
+  },
+  {
+    "model": "swin_tiny_patch4_window7_224",
+    "registry_tag": "ms_in1k",
+    "registry_lineage": "ImageNet-1k",
+    "source_file": "swin_transformer.py",
+    "line": 1113,
+    "url": "https://github.com/huggingface/pytorch-image-models/blob/v1.0.28/timm/models/swin_transformer.py#L1113",
+    "loaded_weight_checksum": "Not retained",
+    "interpretation": "Static default of unmodified v1.0.28 registry; not a historical execution record"
+  }
+]

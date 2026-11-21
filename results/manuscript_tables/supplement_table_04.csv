@@ -1,0 +1,5 @@
+Architecture,P4 restricted to 5 classes,P5 exact-age matched,Descriptive attenuation (P4−P5)
+ConvNeXt-Tiny,0.3441,0.3181,0.0261
+ResNet-50,0.4551,0.4252,0.0299
+Swin-Tiny,0.3391,0.3390,0.0001
+ViT-S/16,0.3889,0.3724,0.0165

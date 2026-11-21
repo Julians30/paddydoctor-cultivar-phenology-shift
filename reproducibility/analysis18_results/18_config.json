@@ -1,0 +1,24 @@
+{
+  "bootstrap": 5000,
+  "primary_scope": "fixed-target macro-F1 loss remains primary; these are secondary retrospective diagnostics",
+  "calibration_CV": "3 stratified source-validation folds; lambda grid .001,.01,.1,1,10; no test tuning",
+  "vector_input": "centered log probabilities (identical to centered logits up to archived numeric precision)",
+  "dirichlet_input": "log probabilities; ODIR penalty, equal off-diagonal and intercept lambda selected by source CV",
+  "target_reference": "five disjoint 20-label calibration folds, each tested on its complement of 80; descriptive repetition, not five independent cohorts or a guaranteed upper bound",
+  "CRC": "temperature/source-calibration halves split deterministically; prediction-set miscoverage, not selective conditional risk; checkpoint previously selected using full validation; no formal guarantee claimed",
+  "calibration_bias": "L2 residual variance correction with source-fixed bins; singleton bins reported as undefined, never silently imputed; not an unbiased L1 ECE claim",
+  "BCa": "fixed seed-mean class F1; class-stratified paired image bootstrap; weighted within-class jackknife preserves class mass",
+  "retraining_performed": false,
+  "normal_bias_adjusted_L1": "five adaptive confidence bins; analytic normal-bootstrap expectation; 2*plugin minus expected absolute gap; signed estimates retained; undefined with singleton bins",
+  "calibrator_bounds": "diagonal .05..20, offdiagonal/intercept -10..10; L-BFGS-B and documented SLSQP fallback",
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0"
+    },
+    "statsmodels": "0.14.6"
+  }
+}

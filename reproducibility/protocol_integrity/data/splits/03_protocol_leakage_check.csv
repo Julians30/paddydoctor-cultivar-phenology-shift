@@ -1,0 +1,16 @@
+protocol,split_a,split_b,image_overlap
+P1_group_clean,test,train,0
+P1_group_clean,test,validation,0
+P1_group_clean,train,validation,0
+P4A_ADT45_to_OTHER_matched,test,train,0
+P4A_ADT45_to_OTHER_matched,test,validation,0
+P4A_ADT45_to_OTHER_matched,train,validation,0
+P4B_ADT45_to_ADT45_control,test,train,0
+P4B_ADT45_to_ADT45_control,test,validation,0
+P4B_ADT45_to_ADT45_control,train,validation,0
+P4C_OTHER_to_ADT45_matched,test,train,0
+P4C_OTHER_to_ADT45_matched,test,validation,0
+P4C_OTHER_to_ADT45_matched,train,validation,0
+P4D_OTHER_to_OTHER_control,test,train,0
+P4D_OTHER_to_OTHER_control,test,validation,0
+P4D_OTHER_to_OTHER_control,train,validation,0

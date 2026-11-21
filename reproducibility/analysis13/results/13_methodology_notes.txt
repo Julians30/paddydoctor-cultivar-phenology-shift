@@ -1,0 +1,31 @@
+Paddy Doctor Q1 — Notebook 13 methodological notes
+
+Primary outcome:
+- Macro-F1.
+
+Practical equivalence:
+- Absolute equivalence margin: ±0.010 Macro-F1.
+- 5,000 paired, class-stratified bootstrap replicates.
+- Same resampled test images are used for all architectures within each replicate.
+- Seed-specific Macro-F1 is averaged across seeds inside each bootstrap replicate.
+- 95% CI is reported for estimation.
+- 90% CI is used for CI-based equivalence assessment.
+
+Selective classification:
+- Images are ranked by model confidence.
+- Risk = 1 - accuracy.
+- AURC summarizes the complete confidence-ranked error trajectory.
+- Lower AURC indicates better selective behavior.
+
+Prediction-set diagnostics:
+- LAC score: 1 - p_true.
+- Nominal coverages: 90% and 95%.
+- Raw and temperature-scaled probabilities are evaluated.
+- Temperature parameters are inherited from Notebook 09 and were fit only on validation.
+- IMPORTANT: validation was previously used for checkpoint selection and temperature scaling.
+  Therefore strict split-conformal finite-sample coverage is NOT claimed here.
+  Results are interpreted as empirical prediction-set diagnostics and domain-shift sensitivity.
+- A formal conformal claim would require an independent calibration set that was not used
+  for model selection, hyperparameter tuning, checkpoint selection, or probability calibration.
+
+No network retraining is performed by Notebook 13.

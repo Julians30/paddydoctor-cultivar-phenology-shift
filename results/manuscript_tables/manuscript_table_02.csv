@@ -1,0 +1,4 @@
+Protocol,Classes,Train,Validation,Test,Training runs
+P1,10,"7,377","1,476","1,476",12
+P4,10,"1,848",616,616,24
+P5,5,300,100,100,24

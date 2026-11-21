@@ -1,0 +1,19 @@
+{
+  "source_zip_sha256": "18b735b95c5c7aa691c317bede8f80b12103956f413dc823df53ed75409737e7",
+  "completed_fits": 48,
+  "evaluations": 96,
+  "result_files_hashed": 960,
+  "max_metric_error": 2.1316282072803006e-14,
+  "checks": [
+    "P6 frozen split, balanced support, pairs, group isolation, 24 runs and all 30 epochs",
+    "P7 frozen split, balanced support, pairs, group isolation, 24 runs and all 30 epochs",
+    "960 result-file hashes match COMPLETE receipts; 96 evaluations and probability metrics agree",
+    "All 16 paired F1 losses and 5000-replicate intervals independently reproduced",
+    "Frozen 5370 x 2048 features hashed; training-only scaler, reserved-test probabilities, AUCs and 5000-replicate bounds verified"
+  ],
+  "all_16_loss_intervals_positive": true,
+  "cpu_environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "no_neural_refitting_in_audit": true
+}

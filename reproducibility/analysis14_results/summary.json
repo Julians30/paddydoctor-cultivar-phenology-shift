@@ -1,0 +1,22 @@
+{
+  "n_histories": 60,
+  "n_test_evaluations": 108,
+  "n_validation_caches": 60,
+  "n_numeric_checks": 1512,
+  "numeric_max_absolute_difference": 1.474514954580286e-15,
+  "best_checkpoint_at_epoch30": 4,
+  "validation_rules_without_eligible_threshold": 0,
+  "bootstrap_replicates": 2000,
+  "p5_convnext_target_ADT45_raw_threshold090": [
+    {
+      "source": "ADT45",
+      "coverage": 0.8966666666666666,
+      "risk": 0.03314717568280959
+    },
+    {
+      "source": "OTHER",
+      "coverage": 0.6966666666666667,
+      "risk": 0.37297313291513784
+    }
+  ]
+}

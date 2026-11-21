@@ -1,0 +1,13 @@
+Protocol,Architecture,Runs,Training time (min)
+P1,ConvNeXt-Tiny,3,35.37 ± 0.13
+P1,ResNet-50,3,35.30 ± 0.22
+P1,Swin-Tiny,3,35.45 ± 0.16
+P1,ViT-S/16,3,35.20 ± 0.07
+P4,ConvNeXt-Tiny,6,10.29 ± 0.23
+P4,ResNet-50,6,10.22 ± 0.05
+P4,Swin-Tiny,6,10.33 ± 0.08
+P4,ViT-S/16,6,10.24 ± 0.05
+P5,ConvNeXt-Tiny,6,2.68 ± 0.16
+P5,ResNet-50,6,2.63 ± 0.03
+P5,Swin-Tiny,6,2.65 ± 0.01
+P5,ViT-S/16,6,2.58 ± 0.03

@@ -1,0 +1,17 @@
+experiment,target,model,n,n_boot,cross_wrong_all_seeds,control_correct_cross_wrong_all,wrong_highconf090_raw_all,wrong_highconf090_ts_all
+P4,ADT45,resnet50,616,2000,289,218,45,32
+P4,ADT45,convnext_tiny,616,2000,221,187,60,42
+P4,ADT45,vit_small_patch16_224,616,2000,242,207,75,50
+P4,ADT45,swin_tiny_patch4_window7_224,616,2000,215,179,73,40
+P4,OTHER,resnet50,616,2000,249,228,23,14
+P4,OTHER,convnext_tiny,616,2000,161,146,32,9
+P4,OTHER,vit_small_patch16_224,616,2000,198,186,40,25
+P4,OTHER,swin_tiny_patch4_window7_224,616,2000,168,154,45,17
+P5,ADT45,resnet50,100,2000,41,22,0,2
+P5,ADT45,convnext_tiny,100,2000,29,26,10,7
+P5,ADT45,vit_small_patch16_224,100,2000,28,26,4,2
+P5,ADT45,swin_tiny_patch4_window7_224,100,2000,21,15,8,4
+P5,OTHER,resnet50,100,2000,37,26,1,1
+P5,OTHER,convnext_tiny,100,2000,10,9,4,3
+P5,OTHER,vit_small_patch16_224,100,2000,24,23,2,1
+P5,OTHER,swin_tiny_patch4_window7_224,100,2000,16,15,2,1
