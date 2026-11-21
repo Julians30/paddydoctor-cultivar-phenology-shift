@@ -61,7 +61,7 @@ Notebooks 10 and the equivalence component of 13 are exploratory tools and do no
 
 ## Citation and license
 
-Use [CITATION.cff](CITATION.cff). This release is permanently archived at Zenodo: **DOI [10.5281/zenodo.24424656](https://doi.org/10.5281/zenodo.24424656)**. A manuscript based on these materials has been prepared for submission to *SN Computer Science* (Topical Collection "AI for Agriculture"); the article DOI will be added here once it is available. [Archiving guidance](docs/ARCHIVING.md) explains how to identify a fixed snapshot.
+Use [CITATION.cff](CITATION.cff). This release is permanently archived at Zenodo: **DOI [10.5281/zenodo.24424656](https://doi.org/10.5281/zenodo.24424656)**. **Editorial submission:** The associated manuscript, *Reliability of deep vision models under cultivar-associated domain shift in rice plant-health classification with exact age matching*, was **submitted to *SN Computer Science* (Springer Nature) on 21 November 2026**, manuscript ID **SNCS-D-26-10844**. The editorial system displayed **New Submission** on 21 November 2026; this is an initial processing status, **not** peer-review completion or acceptance. The topical-collection designation is not independently confirmed by the submission-status screenshot. The article DOI will be added only after publication. [Archiving guidance](docs/ARCHIVING.md) explains how to identify a fixed snapshot.
 
 Original code and associated repository documentation use the **[MIT License](LICENSE)**. Dataset material, pretrained weights and third-party components retain their respective terms; see [licensing scope](docs/LICENSING.md).
 
