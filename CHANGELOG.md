@@ -2,6 +2,7 @@
 
 ## 2026 11 21
 
+- Recorded actual submission of the associated manuscript to *SN Computer Science* (Springer Nature), manuscript ID **SNCS-D-26-10844**, initial submission date **21 November 2026**; editorial status shown on that date: **New Submission** (not yet accepted). The topical collection is not confirmed by the editorial-status screenshot.
 - Recorded the Zenodo archival DOI (10.5281/zenodo.24424656) in the README, CITATION.cff and archiving guidance, and noted the planned SN Computer Science ("AI for Agriculture") submission.
 - Aligned the title, three-author citation, affiliations and contributions with the manuscript.
 - Added the MIT software license and third-party scope.
