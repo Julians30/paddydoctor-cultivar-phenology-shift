@@ -18,6 +18,7 @@ authors:
     orcid: "https://orcid.org/0009-0003-0678-7828"
 repository-code: "https://github.com/Julians30/paddydoctor-cultivar-phenology-shift"
 url: "https://github.com/Julians30/paddydoctor-cultivar-phenology-shift"
+doi: "10.5281/zenodo.24424656"
 license: MIT
 keywords:
   - rice plant-health classification

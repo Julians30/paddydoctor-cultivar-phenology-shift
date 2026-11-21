@@ -2,6 +2,7 @@
 
 ## 2026 11 21
 
+- Recorded the Zenodo archival DOI (10.5281/zenodo.24424656) in the README, CITATION.cff and archiving guidance, and noted the planned SN Computer Science ("AI for Agriculture") submission.
 - Aligned the title, three-author citation, affiliations and contributions with the manuscript.
 - Added the MIT software license and third-party scope.
 - Added notebooks/exports 13–19, completed experimental records, exact assignments, numerical sources, environment records and checksums.
